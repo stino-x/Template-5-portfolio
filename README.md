@@ -60,7 +60,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project">Html/css</a>
+# 📖 [Template-5-portfolio] <a name="about-project">Html/css</a>
 
 >  this is the first phase of my first portfolio project
 
@@ -104,9 +104,14 @@ In order to run this project you need:
 install node
 intstall linters and linter extensions
 write basic html/css
+activate live server extension on your IDE(its front end only )
 ### Setup
 
 Clone this repository to your desired folder:
+
+install node
+intstall linters and linter extensions
+write basic html/css
 
 <!--
 Example commands:
@@ -134,11 +139,11 @@ not ready for deployment
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Authors <a name="authors">Iheagwara Augustine</a>
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Iheagwara Augustine**
 
 - GitHub: [@githubhandle](https://github.com/stino-x)
 - Twitter: [@twitterhandle](https://twitter.com/Stino_x_Uncaged)
