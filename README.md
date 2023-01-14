@@ -144,6 +144,9 @@ Answer: stylelint.
 >Question: what did you use to get the effect on the button ?
 Answer: the hover css feature.
 
+>Question:how did you lay out your work?
+Answer: css Grid/Flex-box.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
