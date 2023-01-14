@@ -22,7 +22,9 @@ header {
 }
 
 .section-1 {
+  display: flex;
   position: relative;
+  flex-direction: column;
 }
 
 .top-left {
