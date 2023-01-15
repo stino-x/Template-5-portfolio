@@ -76,6 +76,18 @@ p {
   max-width: 180%;
 }
 
+h2 {
+  color: #fff;
+  font-family: var(--ff-project-name-goes-here);
+  font-style: normal;
+  font-weight: 300;
+  font-size: var(--fs-project-name-goes-here);
+  line-height: 80%;
+  margin-left: var(--margin-left-project-name-goes-here);
+  margin-top: var(--margin-top-project-name-goes-here);
+  margin-bottom: var(--margin-bottom-project-name-goes-here);
+}
+
 .image-1-wrapper {
   width: var(--adaptive-sizing-section-2);
   margin-bottom: 10vh;
@@ -170,18 +182,6 @@ p {
   grid-row-end: 8;
 }
 
-h2 {
-  color: #fff;
-  font-family: var(--ff-project-name-goes-here);
-  font-style: normal;
-  font-weight: 300;
-  font-size: var(--fs-project-name-goes-here);
-  line-height: 80%;
-  margin-left: var(--margin-left-project-name-goes-here);
-  margin-top: var(--margin-top-project-name-goes-here);
-  margin-bottom: var(--margin-bottom-project-name-goes-here);
-}
-
 .projects h2 {
   color: #1a2236;
   font-family: var(--ff-headings);
@@ -247,6 +247,11 @@ h2 {
   margin-bottom: 4.5rem;
   display: flex;
   flex-direction: column;
+}
+
+.media img {
+  width: 5vw;
+  margin-top: 5vh;
 }
 
 .section-3 .Start-collab img {
@@ -435,9 +440,4 @@ footer {
   justify-content: space-around;
   top: 2vh;
   position: relative;
-}
-
-.media img {
-  width: 5vw;
-  margin-top: 5vh;
 }
