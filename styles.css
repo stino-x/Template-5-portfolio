@@ -379,7 +379,29 @@ input[type=text] {
   position: relative;
 }
 
-/* ruben */
+input[type=text]::placeholder {
+  font-family: var(--font-family-body);
+  position: relative;
+  left: 0.8rem;
+  bottom: 0.5rem;
+}
+
+input[type=email] {
+  width: min(90vw, 700px);
+  margin-left: 1rem;
+  height: 52px;
+  background: #fff;
+  border: 1px solid #DFDFE0;
+  border-radius: 4px;
+  position: relative;
+}
+
+input[type=email]::placeholder {
+  font-family: var(--font-family-body);
+  position: relative;
+  left: 0.8rem;
+  bottom: 0.5rem;
+}
 
 textarea {
   width: min(90vw, 700px);
