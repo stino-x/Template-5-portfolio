@@ -405,7 +405,7 @@ input[type=email]::placeholder {
 
 /* clinton */
 
-/* textarea {
+textarea {
   width: min(90vw, 700px);
   margin-left: 1rem;
   height: 112px;
@@ -438,7 +438,7 @@ form button:hover {
   color: #000;
   border-color: #000;
   border-width: 1px;
-} */
+}
 
 /* ruben */
 
