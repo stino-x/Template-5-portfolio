@@ -385,6 +385,12 @@ input[type=text] {
   border: 1px solid #dfdfe0;
   border-radius: 4px;
   position: relative;
+  padding-top: 1.438rem;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem;
+  font-family: var(--font-family-body);
+  font-style: normal;
 }
 
 input[type=text]::placeholder {
@@ -402,6 +408,12 @@ input[type=email] {
   border: 1px solid #dfdfe0;
   border-radius: 4px;
   position: relative;
+  padding-top: 1.438rem;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem;
+  font-family: var(--font-family-body);
+  font-style: normal;
 }
 
 input[type=email]::placeholder {
@@ -419,6 +431,12 @@ textarea {
   border: 1px solid #dfdfe0;
   border-radius: 4px;
   position: relative;
+  padding-top: 1.438rem;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem;
+  font-family: var(--font-family-body);
+  font-style: normal;
 }
 
 textarea::placeholder {
