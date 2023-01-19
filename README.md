@@ -125,7 +125,8 @@ maybe a more built out page with more information in its content and a desktop v
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
-none to note
+@Jrmcuervo [GITHUB]
+@ClintonYounge [GITHUB]
 
 
 <!-- SUPPORT -->
