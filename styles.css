@@ -986,6 +986,11 @@ footer {
     transition: transform 2s;
   }
 
+  .media img {
+    size: 5vw;
+    margin-top: 0;
+  }
+
   .grid img:hover {
     transform: scale(150%);
   }
@@ -1259,10 +1264,5 @@ footer {
     gap: 5vw;
     position: relative;
     margin-left: 25%;
-  }
-
-  .media img {
-    size: 5vw;
-    margin-top: 0;
   }
 }
