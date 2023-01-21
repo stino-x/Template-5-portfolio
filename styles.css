@@ -68,6 +68,11 @@
   padding-top: 5vh;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 h1 {
   font-family: var(--ff-headings);
   font-style: normal;
@@ -585,6 +590,10 @@ footer {
     height: 20%;
     font-family: var(--font-family-body);
     font-size: var(--header-list-size);
+  }
+
+  .desktop-header a {
+    color: #1a2236;
   }
 
   .grid-2-grid-2 .H-R-J-desktop li {
