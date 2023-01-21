@@ -982,6 +982,14 @@ footer {
     border-width: 1px;
   }
 
+  .grid img {
+    transition: transform 3s;
+  }
+  
+  .grid img:hover {
+    transform: scale(110%)
+  }
+
   .About {
     display: flex;
     gap: 3vw;
