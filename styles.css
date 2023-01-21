@@ -983,11 +983,11 @@ footer {
   }
 
   .grid img {
-    transition: transform 3s;
+    transition: transform 2s;
   }
   
   .grid img:hover {
-    transform: scale(110%)
+    transform: scale(150%)
   }
 
   .About {
