@@ -59,7 +59,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](link not available (its not online yet)))
+- [Live Demo Link](https://stino-x.github.io/Template-5-portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,7 +97,7 @@ the use of live server  is recommended
 
 You can deploy this project using:
 
--not ready for deployment
+-https://stino-x.github.io/Template-5-portfolio/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
