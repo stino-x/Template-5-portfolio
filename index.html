@@ -323,14 +323,14 @@ If you like what you see and have a project you need coded, don’t hesitate and
             <div class="desk-form">
                 <form action="https://formspree.io/f/mknedjvo" method="post">
                 <div class="flex-wrap">
-                    <label for="Name" class="name-label">Your name</label>
-                    <input type="text"  maxlength="30" class="name" placeholder="Name">
-                    <label for="Email" class="email-label">Your email</label>
-                    <input type="email" class="email" placeholder="Email">
+                    <label for="Name" name="Name" class="name-label">Your name</label>
+                    <input type="text" name="Name" maxlength="30" class="name" placeholder="Name" required>
+                    <label for="Email" name="Email" class="email-label">Your email</label>
+                    <input type="email" name="Email" class="email" placeholder="Email" required>
                 </div>
                     <div class="message-wrap">
-                    <label for="Message" class="message-label">message</label>
-                    <textarea type="text" name="" maxlength="500" class="message" placeholder="Enter your message" ></textarea>
+                    <label for="Message" class="message-label" name="Message">message</label>
+                    <textarea type="text" name="Message" maxlength="500" class="message" placeholder="Enter your message" required ></textarea>
                     </div>
                     <button class="Start-collab-2">Start collaboration</button>
                 </form> 
