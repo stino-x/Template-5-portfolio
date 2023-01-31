@@ -1,31 +1,33 @@
 const menu = document.querySelector('#menu-whole');
-const x = document.querySelector('#x');
-const smallMen = document.querySelectorAll('.h-menu');
+const cancel = document.querySelector('#cancel');
+const menulist = document.querySelectorAll('.h-menu');
 const main = document.querySelector('main');
-const hamber = document.querySelector('#hamber');
+const hamburger = document.querySelector('#hamburger');
+const mobileheader = document.querySelector('.mobile-header');
 
 function display() {
-  if(menu.style.display === 'none') {
+  if (menu.style.display === 'none') {
     menu.style.display = 'block';
     main.style.display = 'none';
-    hamber.style.display = 'none';
-  }else {
+    hamburger.style.display = 'none';
+    mobileheader.style.display = 'none';
+  } else {
     menu.style.display = 'none';
     main.style.display = 'block';
-    hamber.style.display = 'block';
+    hamburger.style.display = 'block';
   }
 }
 
 function hide() {
   menu.style.display = 'none';
-  
-  hamber.style.display = 'block';
+  mobileheader.style.display = 'flex';
+  hamburger.style.display = 'block';
   main.style.display = 'block';
 }
 
-hamber.addEventListener('click', display);
-x.addEventListener('click', display);
+hamburger.addEventListener('click', display);
+cancel.addEventListener('click', display);
 
-for (let i = 0; i < smallMen.length; i += 1) {
-  smallMen[i].addEventListener('click', hide);
+for (let i = 0; i < menulist.length; i += 1) {
+  menulist[i].addEventListener('click', hide);
 }

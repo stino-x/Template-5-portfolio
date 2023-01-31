@@ -29,6 +29,10 @@
   --color-boxes-size: min(90vw, 700px);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .page-one {
   display: none;
 }
@@ -71,6 +75,7 @@
 #menu-whole {
   display: none;
 }
+
 .nav-menu {
   width: 95vw;
   height: 100vh;
@@ -139,7 +144,6 @@
 .h-menu {
   width: 100%;
 }
-
 
 .bottom-part {
   background-image: url('images.svg/Mask Group (1).svg');
@@ -635,7 +639,7 @@ footer {
     display: none;
   }
 
-  .nav-menu {  
+  .nav-menu {
     display: none;
   }
 
