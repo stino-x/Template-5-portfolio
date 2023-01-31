@@ -37,10 +37,10 @@
 >  this is the first project of the microverse curriculum
 
 ## 🛠 Built With <a name="built-with"></a>
->  Html/css
+>  Html/css/Javascript
 ### Tech Stack <a name="tech-stack"></a>
 
-> Html/css
+> Html/css/Javascript
 
 
 
@@ -50,7 +50,8 @@
 
 >hover feature over button
 >correct use of semantic tags
-> application best coding practices 
+> application best coding practices
+>navigation menu 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -59,14 +60,14 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](link not available (its not online yet)))
+- [Live Demo Link](https://stino-x.github.io/Template-5-portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-could familiarize any observer with basic use of html/css.
+could familiarize any observer with basic use of html/css and javascript
 
 To get a local copy up and running, follow these steps.
 
@@ -77,6 +78,7 @@ In order to run this project you need:
 install node
 intstall linters and linter extensions
 write basic html/css
+write a litttle javascript
 activate live server extension on your IDE(its front end only )
 ### Setup
 
@@ -125,7 +127,12 @@ maybe a more built out page with more information in its content and a desktop v
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
-none to note
+@ClintonYounge
+@Jrmcuervo
+@NicolasAndrehh
+@francksefu
+
+all on Git hub😀
 
 
 <!-- SUPPORT -->
