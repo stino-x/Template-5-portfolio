@@ -180,7 +180,8 @@ p {
   color: #1a2236;
   margin-left: 1rem;
   margin-bottom: 2.5rem;
-  max-width: 180%;
+  max-width: 94%;
+  text-align: justify;
 }
 
 h2 {
