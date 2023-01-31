@@ -12,14 +12,29 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<script defer src="script.js"></script>
 </head>
 <body>
     <header class="mobile-header">
-        <div class="top-left"></div>
-        <nav><img src="images.svg\ic_menu (1).svg" alt="menu-icon" class="hamburger"></nav>
+        <div class="top-left" id="top-left"></div>
+        <nav id="hamburger"><img src="images.svg\ic_menu (1).svg" alt="menu-icon" class="hamburger"></nav>
     </header>
+    <div class="nav-menu" id="menu-whole">
+        <div class="top-part" id="cancel"><img class="cancel" src="images.svg\Union (9).svg" alt="cancel"></div>
+    <div class="menu-wrapper">
+        <div class="menu">
+            <ul>
+                <li class="h-menu"><a href="#hello">Hello</a></li>
+                <li class="h-menu"><a href="#portfolio">Portfolio</a></li>
+                <li class="h-menu"><a href="#about">About</a></li>
+                <li class="h-menu"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom-part"></div>
+    </div>
     <main>
-        <section class="section-1">
+        <section class="section-1" id="hello">
             <h1>Iheagwara<br>Augustine</h1>
         <p>
             Hello! I am a software developer! I can help you build a product, feature or website. Take a look of my works.
@@ -53,7 +68,7 @@ If you like what you see and have a project you need coded, don’t hesitate and
             </section>
             </section>
             <!-- desktop version end -->
-        <section class="section-2">
+        <section class="section-2" id="portfolio">
             <div class="projects"><h2 >Projects</h2></div>
             <div class="project-items-1">
                 <img src="images.svg\Rectangle 21 (19).svg" class="project-image" alt="project-image-1">
@@ -196,7 +211,7 @@ If you like what you see and have a project you need coded, don’t hesitate and
             <div class="grid-10"><img src="images.svg/Rectangle 47.svg" alt="project-image-desktop-5"></div>
         </section>
         <!-- works desktop end -->
-        <section class="section-3">
+        <section class="section-3" id="about">
             <h1 class="about-sign">About</h1>
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab culpa iste nam qui excepturi facere at quis porro odio nulla in quod dignissimos, sint cumque quo! Repellat ipsum nulla a.
@@ -290,7 +305,7 @@ If you like what you see and have a project you need coded, don’t hesitate and
             </div>
         </section>
         <!-- about desktop end -->
-    <section class="section-4">
+    <section class="section-4" id="contact">
         <div class="mobile-form-wrapper">
             <h3 class="get-started">Get Started</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus architecto, atque laudantium autem vel explicabo soluta quos fugit quod distinctio. Ea ullam ut facere numquam minima dignissimos? Mollitia, esse iure.</p>
