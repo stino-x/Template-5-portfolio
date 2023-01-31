@@ -68,6 +68,9 @@
   padding-top: 5vh;
 }
 
+#menu-whole {
+  display: none;
+}
 .nav-menu {
   width: 95vw;
   height: 100vh;
