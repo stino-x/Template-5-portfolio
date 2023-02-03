@@ -70,6 +70,7 @@ body {
 
 .hamburger {
   padding-top: 5vh;
+  cursor: pointer;
 }
 
 #menu-whole {
@@ -79,6 +80,10 @@ body {
 .nav-menu {
   width: 95vw;
   height: 100vh;
+}
+
+.cancel {
+  cursor: pointer;
 }
 
 .top-part {
@@ -617,6 +622,7 @@ footer {
   body {
     overflow-x: hidden;
     position: relative;
+    height: 300vh;
   }
 
   .page-one {

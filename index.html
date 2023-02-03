@@ -19,6 +19,7 @@
         <div class="top-left" id="top-left"></div>
         <nav id="hamburger"><img src="images.svg\ic_menu (1).svg" alt="menu-icon" class="hamburger"></nav>
     </header>
+    <!-- nav-menu -->
     <div class="nav-menu" id="menu-whole">
         <div class="top-part" id="cancel"><img class="cancel" src="images.svg\Union (9).svg" alt="cancel"></div>
     <div class="menu-wrapper">
@@ -33,6 +34,7 @@
     </div>
     <div class="bottom-part"></div>
     </div>
+    <!-- nav-menu -->
     <main>
         <section class="section-1" id="hello">
             <h1>Iheagwara<br>Augustine</h1>
@@ -309,11 +311,12 @@ If you like what you see and have a project you need coded, don’t hesitate and
         <div class="mobile-form-wrapper">
             <h3 class="get-started">Get Started</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus architecto, atque laudantium autem vel explicabo soluta quos fugit quod distinctio. Ea ullam ut facere numquam minima dignissimos? Mollitia, esse iure.</p>
-        <form action="https://formspree.io/f/xoqzvkpg" method="post">
+        <form action="https://formspree.io/f/xoqzvkpg" method="post" class="form">
             <label for="Name"><input type="text" placeholder="Your name" maxlength="30" class="name" required></label>
             <label for="Email"><input type="email" placeholder="Your email" class="email"required></label>
+            <small id="error-message"></small>
             <label for="Message"><textarea type="text" name="message" maxlength="500" class="message" placeholder="Enter your message here.." required></textarea></label>
-            <button class="Start-collab-2">Start collaboration</button>
+            <button class="Start-collab-2" type="submit">Start collaboration</button>
         </form>
         </div>
         <footer>
@@ -336,18 +339,19 @@ If you like what you see and have a project you need coded, don’t hesitate and
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam obcaecati laborum ducimus vel, impedit nostrum consequuntur  porro autem sit, perferendis quibusdam eum officiis aliquid veritatis perspiciatis odio eos esse consequatur?
             </p>
             <div class="desk-form">
-                <form action="https://formspree.io/f/mknedjvo" method="post">
+                action="https://formspree.io/f/mknedjvo"
+                <form method="post" class="form" id="form-desk">
                 <div class="flex-wrap">
                     <label for="Name" name="Name" class="name-label">Your name</label>
                     <input type="text" name="Name" maxlength="30" class="name" placeholder="Name" required>
-                    <label for="Email" name="Email" class="email-label">Your email</label>
-                    <input type="email" name="Email" class="email" placeholder="Email" required>
+                    <label for="Email" name="Email"  class="email-label">Your email</label>
+                    <input type="email" name="Email" id="email-desk" class="email" placeholder="Email" required><small id="error-message"></small>
                 </div>
                     <div class="message-wrap">
                     <label for="Message" class="message-label" name="Message">message</label>
                     <textarea type="text" name="Message" maxlength="500" class="message" placeholder="Enter your message" required ></textarea>
                     </div>
-                    <button class="Start-collab-2">Start collaboration</button>
+                    <button class="Start-collab-2" type="submit">Start collaboration</button>
                 </form> 
             </div>
         </div>
