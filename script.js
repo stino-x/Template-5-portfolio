@@ -1,9 +1,16 @@
+// const { messages } = require("stylelint/lib/rules/alpha-value-notation");
+
 const menu = document.querySelector('#menu-whole');
 const cancel = document.querySelector('#cancel');
 const menulist = document.querySelectorAll('.h-menu');
 const main = document.querySelector('main');
 const hamburger = document.querySelector('#hamburger');
 const mobileheader = document.querySelector('.mobile-header');
+// const formbutton = document.querySelector('.Start-collab-2');
+
+const formObject = {
+  name: '',
+};
 
 function display() {
   if (menu.style.display === 'none') {
@@ -26,7 +33,7 @@ function hide() {
 }
 
 hamburger.addEventListener('click', display);
-cancel.addEventListener('click', display);
+cancel.addEventListener('click', hide);
 
 for (let i = 0; i < menulist.length; i += 1) {
   menulist[i].addEventListener('click', hide);
