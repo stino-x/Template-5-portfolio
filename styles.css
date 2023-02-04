@@ -577,6 +577,10 @@ form button:hover {
   border-width: 1px;
 }
 
+small {
+  font-family: var(--font-family-body);
+}
+
 footer {
   background-color: #1a2236;
   display: flex;

@@ -310,11 +310,12 @@ If you like what you see and have a project you need coded, don’t hesitate and
         <div class="mobile-form-wrapper">
             <h3 class="get-started">Get Started</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus architecto, atque laudantium autem vel explicabo soluta quos fugit quod distinctio. Ea ullam ut facere numquam minima dignissimos? Mollitia, esse iure.</p>
-        <form action="https://formspree.io/f/xoqzvkpg" method="post">
+        <form action="https://formspree.io/f/xoqzvkpg" method="post" id="mobile-form">
             <label for="Name"><input type="text" placeholder="Your name" maxlength="30" class="name" required></label>
-            <label for="Email"><input type="email" placeholder="Your email" class="email"required></label>
+            <label for="Email"><input type="email" placeholder="Your email" class="email"required id="email-mobile"></label>
+            <small id="messageEmail-mobile" class="small-message-box"></small>
             <label for="Message"><textarea type="text" name="message" maxlength="500" class="message" placeholder="Enter your message here.." required></textarea></label>
-            <button class="Start-collab-2">Start collaboration</button>
+            <button class="Start-collab-2" type="submit">Start collaboration</button>
         </form>
         </div>
         <footer>
@@ -344,13 +345,13 @@ If you like what you see and have a project you need coded, don’t hesitate and
                     <input type="text" name="Name" maxlength="30" class="name" placeholder="Name" required>
                     <label for="Email" name="Email" class="email-label">Your email</label>
                     <input type="email" name="Email" class="email" placeholder="Email" required id="email-desk">
-                    <small id="messageEmail"></small>
+                    <small id="messageEmail" class="small-message-box"></small>
                 </div>
                     <div class="message-wrap">
                     <label for="Message" class="message-label" name="Message">message</label>
                     <textarea type="text" name="Message" maxlength="500" class="message" placeholder="Enter your message" required ></textarea>
                     </div>
-                    <button class="Start-collab-2" type="submit">Start collaboration</button><!---->
+                    <button class="Start-collab-2" type="submit">Start collaboration</button>
                 </form> 
             </div>
         </div>
