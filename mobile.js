@@ -14,6 +14,6 @@ const body = document.body;
 const bodyS = [{
     css: `width: 98vw; height: 100vh;`,
     text: 'franck'
-},{ css1: 'width: 100%, height: 300px'}]
+}, { css1: 'width: 100%, height: 300px'}]
 
 body.style.cssText = bodyS[0].css; 
