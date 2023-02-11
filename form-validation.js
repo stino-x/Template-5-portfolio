@@ -9,9 +9,6 @@ const emailInput = document.querySelector('.email');
 const messageInput = document.querySelector('.message');
 const rawData = localStorage.getItem('cachedFormData');
 
-// const formbutton = document.querySelector('#form-button');
-// const formbuttondesktop = document.querySelector('#form-button-desk');
-
 const formobject = {
   name: '',
   email: '',
