@@ -72,18 +72,3 @@ mobileForm.addEventListener('submit', (e) => {
     mobileForm.submit();
   }
 });
-
-// const languagecontainer = document.queryselector('.languages');
-//   projectsID.forEach((project) => {
-//     languagecontainer.insertAdjacentHTML('beforeend',
-//       ` <h2${project.name}</h2>
-//         <ul class="H-R-J">
-//             <li class="Html-css">${project.technologies[0]}</li>
-//             <li class="Ruby">${project.technologies[1]}</li>
-//             <li class="Javascript">${project.technologies[2]}</li>
-//         </ul>
-//         <a class="see-this-project-mobile" data-id="${project.id} href="#">
-//             See this project
-//             <img src="images.svg/Union (7).svg" alt="arrow" class="arrow">
-//         </a>`);
-//   });
