@@ -49,6 +49,21 @@ body {
   display: none;
 }
 
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  backdrop-filter: blur(8px);
+}
+
+#overlay.active {
+  display: block;
+}
+
 .mobile-header {
   display: flex;
   gap: 37vw;
@@ -70,6 +85,7 @@ body {
 
 .hamburger {
   padding-top: 5vh;
+  cursor: pointer;
 }
 
 #menu-whole {
@@ -79,6 +95,10 @@ body {
 .nav-menu {
   width: 95vw;
   height: 100vh;
+}
+
+.cancel {
+  cursor: pointer;
 }
 
 .top-part {
@@ -346,7 +366,7 @@ h2 {
   padding-right: 0.2rem;
 }
 
-.see-this-project {
+.see-this-project-mobile {
   margin-left: 1rem;
   width: var(--see-this-project-width);
   height: 44px;
@@ -357,10 +377,169 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-.see-this-project:hover {
+.see-this-project-mobile:hover {
   background-color: #fff;
   border-color: #000;
   color: #000;
+}
+
+.pop-up-window {
+  position: absolute;
+  z-index: 10;
+  background-color: #fff;
+  top: 40%;
+}
+
+.pop-up-window #carousel-cancel {
+  margin-top: 5%;
+  margin-left: 90%;
+  margin-bottom: 6%;
+  position: relative;
+  cursor: pointer;
+}
+
+#popup-window-mobile-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.pop-up-window h3 {
+  font-family: 'Poppins', sans-serif;
+  margin-left: 5%;
+  font-size: 1.8rem;
+  margin-bottom: 6%;
+}
+
+.pop-up-languages {
+  position: relative;
+  display: flex;
+  list-style: none;
+  gap: 3%;
+  margin-left: 5%;
+  margin-bottom: 6%;
+}
+
+.pop-up-languages li {
+  border: 0.516669px solid #1a2236;
+  padding: 1.5%;
+  font-family: 'Poppins', sans-serif;
+  color: #1a2236;
+}
+
+.carousel {
+  position: relative;
+  width: 85vw;
+  margin-left: 5%;
+  margin-bottom: 56.5%;
+  z-index: 0;
+  height: 100%;
+}
+
+#slide-left {
+  position: absolute;
+  z-index: 1;
+  top: 20vh;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#slide-right {
+  position: absolute;
+  z-index: 1;
+  left: 83vw;
+  top: 20vh;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.carousel-track {
+  width: 100%;
+  position: relative;
+  list-style: none;
+  height: 100%;
+  transition: transform 250ms ease-in;
+}
+
+.carousel-slide {
+  position: absolute;
+  width: 100%;
+}
+
+.carousel-images {
+  width: 100%;
+}
+
+.carousel-nav {
+  position: relative;
+  margin-bottom: 5%;
+  left: 5%;
+  top: 10%;
+  width: 90vw;
+  z-index: 5;
+}
+
+.carousel-nav-images {
+  width: 21vw;
+}
+
+.carousel-indicator {
+  border: 5px solid #1a2236;
+}
+
+.rest-of-the-page {
+  position: relative;
+  width: 100%;
+  margin-bottom: 50%;
+}
+
+.pop-up-window p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #1a2236;
+}
+
+.pop-up-window #paragraph-1 {
+  margin-bottom: 8%;
+  margin-left: 2.5%;
+  text-align: left;
+  width: 95%;
+}
+
+.pop-up-window #paragraph-2 {
+  margin-bottom: 8%;
+  margin-left: 2.5%;
+  text-align: left;
+  width: 95%;
+}
+
+.pop-up-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+
+.pop-up-buttons button {
+  padding: 2%;
+  width: 70vw;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  color: #1a2236;
+  background-color: white;
+  gap: 50%;
+}
+
+.pop-up-buttons button a {
+  text-decoration: none;
+  color: #1a2236;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  margin-right: 0%;
+  font-size: 1rem;
 }
 
 .section-3 {
@@ -554,7 +733,7 @@ textarea::placeholder {
   top: 1rem;
 }
 
-form button {
+#form-button {
   margin-left: 1.5rem;
   margin-right: 2rem;
   background-color: #1a2236;
@@ -565,11 +744,15 @@ form button {
   width: min(90vw, 700px);
 }
 
-form button:hover {
+#form-button:hover {
   background-color: #fff;
   color: #000;
   border-color: #000;
   border-width: 1px;
+}
+
+small {
+  font-family: var(--font-family-body);
 }
 
 footer {
@@ -617,6 +800,22 @@ footer {
   body {
     overflow-x: hidden;
     position: relative;
+    height: 600vh;
+  }
+
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+  }
+
+  #overlay.active {
+    display: block;
   }
 
   .page-one {
@@ -684,6 +883,24 @@ footer {
 
   .desktop-header a {
     color: #1a2236;
+  }
+
+  .pop-up-languages-desk li {
+    border: 0.516669px solid #1a2236;
+    padding: 0.4%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    font-family: 'Poppins', sans-serif;
+    color: #1a2236;
+  }
+
+  .pop-up-buttons-desk button {
+    padding: 1.8%;
+    width: 20vw;
+    margin-bottom: 10%;
+    color: #1a2236;
+    background-color: white;
+    gap: 50%;
   }
 
   .grid-2-grid-2 .H-R-J-desktop li {
@@ -1077,8 +1294,214 @@ footer {
     margin-top: 0;
   }
 
-  .grid img:hover {
+  .grid-2 img:hover {
     transform: scale(150%);
+  }
+
+  .grid-3 img:hover {
+    transform: scale(150%);
+  }
+
+  .grid-5 img:hover {
+    transform: scale(150%);
+  }
+
+  .grid-6 img:hover {
+    transform: scale(150%);
+  }
+
+  /* .popup-window-desktop-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+  } */
+
+  .blue-background {
+    width: 100vw;
+    background: rgba(26, 34, 54, 0.95);
+    backdrop-filter: blur(12px);
+    padding-bottom: 10%;
+    padding-top: 1%;
+    height: 280vh;
+    position: relative;
+    z-index: 99;
+  }
+
+  .pop-up-window-desktop {
+    background-color: white;
+    margin-left: 4.5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    padding-bottom: 40%;
+    position: relative;
+    width: 90%;
+    height: 100%;
+  }
+
+  /* .pop-up-header {
+    display: flex;
+  } */
+
+  .pop-up-window-desktop h3 {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 5%;
+    font-size: 3rem;
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+
+  #carousel-cancel-desk {
+    position: absolute;
+    left: 90%;
+    top: 2.5%;
+    cursor: pointer;
+  }
+
+  .pop-up-languages-desk {
+    position: relative;
+    display: flex;
+    list-style: none;
+    gap: 1%;
+    margin-left: 5%;
+    margin-bottom: 6%;
+  }
+
+  /* .pop-up-languages-desk li {
+    border: 0.516669px solid #1a2236;
+    padding: 0.4%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    font-family: 'Poppins', sans-serif;
+    color: #1a2236;
+  } */
+
+  .carousel-desk {
+    position: relative;
+    width: 98vw;
+  }
+
+  #slide-left-desk {
+    position: absolute;
+    top: 45vh;
+    left: 5vw;
+    z-index: 1;
+  }
+
+  #slide-right-desk {
+    position: absolute;
+    top: 45vh;
+    left: 76vw;
+    z-index: 1;
+  }
+
+  .carousel-track-desk {
+    position: relative;
+    width: 80vw;
+    margin-left: 5%;
+    list-style: none;
+  }
+
+  .carousel-slide-desk {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    transform: none;
+  }
+
+  .carousel-images-desk {
+    width: 90%;
+    transform: none;
+  }
+
+  .carousel-nav-desk {
+    width: 81.5vw;
+    position: absolute;
+    top: 45.8%;
+    left: 5%;
+    margin-bottom: 20%;
+  }
+
+  .carousel-nav-images-desk {
+    width: 22.1%;
+    transform: none;
+    transition: none;
+  }
+
+  .rest-of-the-page-desk {
+    margin-top: 65%;
+    margin-right: 0;
+    margin-left: 5%;
+    padding-top: 5%;
+    width: 90%;
+    position: relative;
+  }
+
+  .pop-up-window-desktop p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 27px;
+    color: #1a2236;
+  }
+
+  .pop-up-window-desktop #paragraph-1-desk {
+    margin-bottom: 8%;
+    margin-left: 10%;
+    margin-right: 5%;
+    text-align: justify;
+    width: 70%;
+    font-size: 18px;
+  }
+
+  .pop-up-window-desktop #paragraph-2-desk {
+    margin-bottom: 8%;
+    margin-left: 10%;
+    margin-right: 5%;
+    text-align: justify;
+    width: 70%;
+    font-size: 18px;
+  }
+
+  .pop-up-buttons-desk {
+    display: flex;
+    gap: 3%;
+  }
+
+  .pop-up-buttons-desk button a {
+    text-decoration: none;
+    color: #1a2236;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-right: 0%;
+    font-size: 1rem;
+  }
+
+  .pop-up-buttons-desk #first-button-desk {
+    margin-left: 10%;
+  }
+
+  /* .pop-up-buttons-desk button img {
+      margin-left: 5%;
+  } */
+
+  .direction-desk {
+    position: relative;
+    display: flex;
+    gap: 50%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+  }
+
+  .direction-left-desk {
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+  }
+
+  .direction-right-desk {
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
   }
 
   .About {
