@@ -2,7 +2,7 @@
 const projectsID = [
   {
     id: 1,
-    name: 'Keeping track of hundreds of components',
+    name: 'Project name gors here',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     'mobile image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/snapshot-portfolio-project.svg',
     'desktop image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/desktop/snapshot-portfolio-project-desk.svg',
@@ -12,51 +12,51 @@ const projectsID = [
   },
   {
     id: 2,
-    name: 'Keeping track of hundreds of components',
+    name: 'Project name gors here',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     'mobile image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/snapshot-portfolio-project.svg',
     'desktop image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/desktop/snapshot-portfolio-project-desk.svg',
-    technologies: ['Ruby', 'CSS', 'JavaScript', 'Bootstrap'],
+    technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
     liveVersion: '#',
     source: '#',
   },
   {
     id: 3,
-    name: 'Keeping track of hundreds of components',
+    name: 'Project name gors here',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     'mobile image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/snapshot-portfolio-project.svg',
     'desktop image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/desktop/snapshot-portfolio-project-desk.svg',
-    technologies: ['Ruby', 'CSS', 'JavaScript', 'Bootstrap'],
+    technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
     liveVersion: '#',
     source: '#',
   },
   {
     id: 4,
-    name: 'Keeping track of hundreds of components',
+    name: 'Project name gors here',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     'mobile image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/snapshot-portfolio-project.svg',
     'desktop image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/desktop/snapshot-portfolio-project-desk.svg',
-    technologies: ['Ruby', 'CSS', 'JavaScript', 'Bootstrap'],
+    technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
     liveVersion: '#',
     source: '#',
   },
   {
     id: 5,
-    name: 'Keeping track of hundreds of components',
+    name: 'Project name gors here',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     'mobile image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/snapshot-portfolio-project.svg',
     'desktop image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/desktop/snapshot-portfolio-project-desk.svg',
-    technologies: ['Ruby', 'CSS', 'JavaScript', 'Bootstrap'],
+    technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
     liveVersion: '#',
     source: '#',
   },
   {
     id: 6,
-    name: 'Keeping track of hundreds of components',
+    name: 'Project name gors here',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     'mobile image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/snapshot-portfolio-project.svg',
     'desktop image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/desktop/snapshot-portfolio-project-desk.svg',
-    technologies: ['Ruby', 'CSS', 'JavaScript', 'Bootstrap'],
+    technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
     liveVersion: '#',
     source: '#',
   },
@@ -218,22 +218,24 @@ function JSprojectDesktop() {
   seeprojectDesktop.forEach((btn) => btn.addEventListener('click', popupwindowDesktopFunc));
   function JsprojectMobile() {
     projectsMobile.insertAdjacentHTML('beforeend', `<div class="projects"><h2 >Projects</h2></div>
-    <div class="project-items-1">
+    <div class="project project-items-1">
         <img src="images.svg/Rectangle 21 (19).svg" class="project-image" alt="project-image-1">
         <div class="languages">
             <h2>Project name goes here</h2>
             <ul class="H-R-J">
-                <li class="Html-css">HTML/CSS</li>
+                <li class="Html-css">${projectsID[0].technology[0]}</li>
                 <li class="Ruby">RUBY ON RAILS</li>
                 <li class="Javascript">JAVASCRIPT</li>
             </ul>
             <button class="see-this-project-mobile">
+                <a href=# data-id="">
                 See this project
                 <img src="images.svg/Union (7).svg" alt="arrow" class="arrow">
+                </a>
             </button>
         </div>
     </div>
-    <div class="project-items-2">
+    <div class="project project-items-2">
         <img src="images.svg/Rectangle 21 (19).svg" class="project-image" alt="project-image-2">
         <div class="languages">
             <h2>Project name goes here</h2>
@@ -243,12 +245,14 @@ function JSprojectDesktop() {
                 <li class="Javascript">JAVASCRIPT</li>
             </ul>
             <button class="see-this-project-mobile">
-                See this project
-                <img src="images.svg/Union (7).svg" alt="arrow" class="arrow">
+            <a href=# data-id="">
+            See this project
+            <img src="images.svg/Union (7).svg" alt="arrow" class="arrow">
+            </a>
             </button>
         </div>
     </div>
-    <div class="project-items-3">
+    <div class="project project-items-3">
         <img src="images.svg/Rectangle 21 (19).svg" class="project-image" alt="project-image-3">
         <div class="languages">
             <h2>Project name goes here</h2>
@@ -258,12 +262,14 @@ function JSprojectDesktop() {
                 <li class="Javascript">JAVASCRIPT</li>
             </ul>
             <button class="see-this-project-mobile">
-                See this project
-                <img src="images.svg/Union (7).svg" alt="arrow" class="arrow">
+            <a href=# data-id="">
+            See this project
+            <img src="images.svg/Union (7).svg" alt="arrow" class="arrow">
+            </a>
             </button>
         </div>
     </div>
-    <div class="project-items-4">
+    <div class="project project-items-4">
         <img src="images.svg/Rectangle 21 (19).svg" class="project-image" alt="project-image-4">
         <div class="languages">
             <h2>Project name goes here</h2>
@@ -273,12 +279,14 @@ function JSprojectDesktop() {
                 <li class="Javascript">JAVASCRIPT</li>
             </ul>
             <button class="see-this-project-mobile">
+                <a href=# data-id="">
                 See this project
                 <img src="images.svg/Union (7).svg" alt="arrow" class="arrow">
+                </a>
             </button>
         </div>
     </div>
-    <div class="project-items-5">
+    <div class="project project-items-5">
         <img src="images.svg/Rectangle 21 (19).svg" class="project-image" alt="project-image-5">
         <div class="languages">
             <h2>Project name goes here</h2>
@@ -288,12 +296,14 @@ function JSprojectDesktop() {
                 <li class="Javascript">JAVASCRIPT</li>
             </ul>
             <button class="see-this-project-mobile">
-                See this project
-                <img src="images.svg/Union (7).svg" alt="arrow" class="arrow">
+            <a  href=# data-id="">
+            See this project
+            <img src="images.svg/Union (7).svg" alt="arrow" class="arrow">
+            </a>
             </button>
         </div>
     </div>
-    <div class="project-items-6">
+    <div class="project project-items-6">
         <img src="images.svg/Rectangle 21 (19).svg" class="project-image" alt="project-image-6">
         <div class="languages">
             <h2>Project name goes here</h2>
@@ -303,8 +313,10 @@ function JSprojectDesktop() {
                 <li class="Javascript">JAVASCRIPT</li>
             </ul>
             <button class="see-this-project-mobile">
-                See this project
-                <img src="images.svg/Union (7).svg" alt="arrow" class="arrow">
+            <a  href=# data-id="">
+            See this project
+            <img src="images.svg/Union (7).svg" alt="arrow" class="arrow">
+            </a>
             </button>
         </div>
     </div>
@@ -358,6 +370,25 @@ function JSprojectDesktop() {
         overlay.classList.remove('active');
       }
       cancelpopupMobile.addEventListener('click', hidepopupMobile);
+      const Project = document.querySelectorAll('.project');
+      projectsID.forEach((project) => {
+        Project[project].insertAdjacentHTML('beforeend',
+          `<img src="images.svg/Rectangle 21 (19).svg" class="project-image" alt="project-image-6">
+          <div class="languages">
+              <h2>${project.name}</h2>
+              <ul class="H-R-J">
+                  <li class="Html-css">${project.technologies[0]}</li>
+                  <li class="Ruby">${project.technologies[1]}</li>
+                  <li class="Javascript">${project.technologies[2]}</li>
+              </ul>
+              <button class="see-this-project-mobile">
+              <a  href=# data-id="">
+              See this project
+              <img src="images.svg/Union (7).svg" alt="arrow" class="arrow">
+              </a>
+              </button>
+          </div>`);
+      });
     }
     seeprojectMobile.forEach((button) => button.addEventListener('click', popupwindowMobileFunc));
   }

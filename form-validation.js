@@ -7,8 +7,8 @@ const messageMobile = document.querySelector('#messageEmail-mobile');
 const nameInput = document.querySelector('.name');
 const emailInput = document.querySelector('.email');
 const messageInput = document.querySelector('.message');
-const formbutton = document.querySelector('#form-button');
-const formbuttondesktop = document.querySelector('#form-button-desk');
+// const formbutton = document.querySelector('#form-button');
+// const formbuttondesktop = document.querySelector('#form-button-desk');
 
 const formobject = {
   name: '',
