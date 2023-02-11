@@ -223,7 +223,7 @@ function JSprojectDesktop() {
         <div class="languages">
             <h2>Project name goes here</h2>
             <ul class="H-R-J">
-                <li class="Html-css">${projectsID[0].technology[0]}</li>
+                <li class="Html-css">HTML/CSS</li>
                 <li class="Ruby">RUBY ON RAILS</li>
                 <li class="Javascript">JAVASCRIPT</li>
             </ul>
