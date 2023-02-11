@@ -31,9 +31,9 @@ body {
   height: 100%;
 }
 
-.pop-up-header {
-  /* display: flex; */
-}
+/* .pop-up-header {
+  display: flex;
+} */
 
 .pop-up-window h3 {
   font-family: 'Poppins', sans-serif;
@@ -120,8 +120,6 @@ body {
   margin-right: 0;
   margin-left: 5%;
   padding-top: 5%;
-  /* padding-bottom: 25%; */
-  /* height: 100%; */
   width: 90%;
   position: relative;
 }
@@ -156,7 +154,6 @@ body {
 .pop-up-buttons {
   display: flex;
   gap: 3%;
-  /* margin-right: 80%; */
 }
 
 .pop-up-buttons button {
@@ -181,9 +178,9 @@ body {
   margin-left: 10%;
 }
 
-.pop-up-buttons button img {
-    /* margin-left: 5%; */
-}
+/* .pop-up-buttons button img {
+    margin-left: 5%;
+} */
 
 .direction {
   position: relative;
