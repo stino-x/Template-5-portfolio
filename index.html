@@ -14,9 +14,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 <script defer src="script.js"></script>
 <script defer src="form-validation.js"></script>
-<script defer src="mobile.js"></script>
 </head>
-<body>
+<body id="body">
+    <div id="overlay"></div>
     <header class="mobile-header">
         <div class="top-left" id="top-left"></div>
         <nav id="hamburger"><img src="images.svg\ic_menu (1).svg" alt="menu-icon" class="hamburger"></nav>
@@ -71,7 +71,7 @@ If you like what you see and have a project you need coded, don’t hesitate and
         </section>
             <!-- desktop version end -->
         <section class="section-2" id="portfolio-mobile">
-            <div class="projects"><h2 >Projects</h2></div>
+            <!-- <div class="projects"><h2 >Projects</h2></div>
             <div class="project-items-1">
                 <img src="images.svg\Rectangle 21 (19).svg" class="project-image" alt="project-image-1">
                 <div class="languages">
@@ -81,7 +81,7 @@ If you like what you see and have a project you need coded, don’t hesitate and
                         <li class="Ruby">RUBY ON RAILS</li>
                         <li class="Javascript">JAVASCRIPT</li>
                     </ul>
-                    <button class="see-this-project">
+                    <button class="see-this-project-mobile">
                         See this project
                         <img src="images.svg\Union (7).svg" alt="arrow" class="arrow">
                     </button>
@@ -96,7 +96,7 @@ If you like what you see and have a project you need coded, don’t hesitate and
                         <li class="Ruby">RUBY ON RAILS</li>
                         <li class="Javascript">JAVASCRIPT</li>
                     </ul>
-                    <button class="see-this-project">
+                    <button class="see-this-project-mobile">
                         See this project
                         <img src="images.svg\Union (7).svg" alt="arrow" class="arrow">
                     </button>
@@ -111,7 +111,7 @@ If you like what you see and have a project you need coded, don’t hesitate and
                         <li class="Ruby">RUBY ON RAILS</li>
                         <li class="Javascript">JAVASCRIPT</li>
                     </ul>
-                    <button class="see-this-project">
+                    <button class="see-this-project-mobile">
                         See this project
                         <img src="images.svg\Union (7).svg" alt="arrow" class="arrow">
                     </button>
@@ -126,7 +126,7 @@ If you like what you see and have a project you need coded, don’t hesitate and
                         <li class="Ruby">RUBY ON RAILS</li>
                         <li class="Javascript">JAVASCRIPT</li>
                     </ul>
-                    <button class="see-this-project">
+                    <button class="see-this-project-mobile">
                         See this project
                         <img src="images.svg\Union (7).svg" alt="arrow" class="arrow">
                     </button>
@@ -141,7 +141,7 @@ If you like what you see and have a project you need coded, don’t hesitate and
                         <li class="Ruby">RUBY ON RAILS</li>
                         <li class="Javascript">JAVASCRIPT</li>
                     </ul>
-                    <button class="see-this-project">
+                    <button class="see-this-project-mobile">
                         See this project
                         <img src="images.svg\Union (7).svg" alt="arrow" class="arrow">
                     </button>
@@ -156,16 +156,16 @@ If you like what you see and have a project you need coded, don’t hesitate and
                         <li class="Ruby">RUBY ON RAILS</li>
                         <li class="Javascript">JAVASCRIPT</li>
                     </ul>
-                    <button class="see-this-project">
+                    <button class="see-this-project-mobile">
                         See this project
                         <img src="images.svg\Union (7).svg" alt="arrow" class="arrow">
                     </button>
                 </div>
-            </div>
+            </div> -->
         </section>
         <!-- works desktop -->
         <section class="grid">
-            <div class="grid-1">    
+            <!-- <div class="grid-1">    
             <div class="project-grid"></div>
             <div class="dots"></div>
             </div>
@@ -210,7 +210,7 @@ If you like what you see and have a project you need coded, don’t hesitate and
             <div class="grid-7"></div>
             <div class="grid-8"></div>
             <div class="grid-9"></div>
-            <div class="grid-10"><img src="images.svg/Rectangle 47.svg" alt="project-image-desktop-5"></div>
+            <div class="grid-10"><img src="images.svg/Rectangle 47.svg" alt="project-image-desktop-5"></div> -->
         </section>
         <!-- works desktop end -->
         <section class="section-3" id="about">
@@ -316,7 +316,7 @@ If you like what you see and have a project you need coded, don’t hesitate and
             <label for="Email"><input type="email" placeholder="Your email" class="email"required id="email-mobile"></label>
             <small id="messageEmail-mobile" class="small-message-box"></small>
             <label for="Message"><textarea type="text" name="message" maxlength="500" class="message" placeholder="Enter your message here.." required></textarea></label>
-            <button class="Start-collab-2" type="submit">Start collaboration</button>
+            <button class="Start-collab-2" type="submit" id="form-button">Start collaboration</button>
         </form>
         </div>
         <footer>
@@ -352,7 +352,7 @@ If you like what you see and have a project you need coded, don’t hesitate and
                     <label for="Message" class="message-label" name="Message">message</label>
                     <textarea type="text" name="Message" maxlength="500" class="message" placeholder="Enter your message" required ></textarea>
                     </div>
-                    <button class="Start-collab-2" type="submit">Start collaboration</button>
+                    <button class="Start-collab-2" id="form-button-desk" type="submit">Start collaboration</button>
                 </form> 
             </div>
         </div>
