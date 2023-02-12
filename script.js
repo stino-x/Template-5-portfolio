@@ -74,7 +74,6 @@ const main = document.querySelector('main');
 const hamburger = document.querySelector('#hamburger');
 const mobileheader = document.querySelector('.mobile-header');
 const overlay = document.querySelector('#overlay');
-// const popupwindowDesktop = document.querySelector('#popup-window-desktop-container');
 // const seeprojectDesktop = document.querySelectorAll('.see-this-project');
 // const formbutton = document.querySelector('.Start-collab-2');
 
