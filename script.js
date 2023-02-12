@@ -374,21 +374,19 @@ function JSprojectDesktop() {
     </div>
 </div>`);
       });
-      const cancelpopupMobile = document.querySelector('.carousel-cancel');
+      const cancelpopupMobile = document.querySelectorAll('.carousel-cancel');
 
       function hidepopupMobile() {
         popupwindowMobile.innerHTML = '';
         overlay.classList.remove('active');
       }
-      
-      cancelpopupMobile.addEventListener('click', hidepopupMobile);
+
+      cancelpopupMobile.forEach((button) => button.addEventListener('click', hidepopupMobile));
     }
     seeprojectMobile.forEach((button) => button.addEventListener('click', popupwindowMobileFunc));
   }
 
   JsprojectMobile();
 }
-
-
 
 window.onload = JSprojectDesktop;
