@@ -375,17 +375,14 @@ function JSprojectDesktop() {
 </div>`);
       });
       const cancelpopupMobile = document.querySelectorAll('.carousel-cancel');
-
       function hidepopupMobile() {
         popupwindowMobile.innerHTML = '';
         overlay.classList.remove('active');
       }
-
       cancelpopupMobile.forEach((button) => button.addEventListener('click', hidepopupMobile));
     }
     seeprojectMobile.forEach((button) => button.addEventListener('click', popupwindowMobileFunc));
   }
-
   JsprojectMobile();
 }
 
