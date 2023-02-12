@@ -390,7 +390,7 @@ h2 {
   top: 40%;
 }
 
-.pop-up-window #carousel-cancel {
+.pop-up-window .carousel-cancel {
   margin-top: 5%;
   margin-left: 90%;
   margin-bottom: 6%;
@@ -1725,6 +1725,9 @@ footer {
 
   #messageEmail {
     margin-left: 40%;
+    position: absolute;
+    z-index: 99;
+    bottom: 32%;
   }
 
   .Get-started .bottom-left {
