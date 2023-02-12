@@ -374,7 +374,7 @@ function JSprojectDesktop() {
     </div>
 </div>`);
       });
-      const cancelpopupMobile = document.getElementsByClassName('carousel-cancel');
+      const cancelpopupMobile = document.querySelector('.carousel-cancel');
       function hidepopupMobile() {
         popupwindowMobile.innerHTML = '';
         overlay.classList.remove('active');
