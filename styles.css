@@ -1723,6 +1723,10 @@ footer {
     top: 15%;
   }
 
+  #messageEmail {
+    margin-left: 40%;
+  }
+
   .Get-started .bottom-left {
     width: 25vw;
     position: relative;
