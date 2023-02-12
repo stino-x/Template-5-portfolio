@@ -375,10 +375,12 @@ function JSprojectDesktop() {
 </div>`);
       });
       const cancelpopupMobile = document.querySelector('.carousel-cancel');
+
       function hidepopupMobile() {
         popupwindowMobile.innerHTML = '';
         overlay.classList.remove('active');
       }
+      
       cancelpopupMobile.addEventListener('click', hidepopupMobile);
     }
     seeprojectMobile.forEach((button) => button.addEventListener('click', popupwindowMobileFunc));
@@ -386,4 +388,7 @@ function JSprojectDesktop() {
 
   JsprojectMobile();
 }
+
+
+
 window.onload = JSprojectDesktop;

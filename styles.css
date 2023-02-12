@@ -754,6 +754,7 @@ textarea::placeholder {
 
 small {
   font-family: var(--font-family-body);
+  margin: auto;
 }
 
 footer {
@@ -821,12 +822,12 @@ footer {
   }
 
   .page-one {
-    /* display: revert; */
+    display: inherit;
     width: 100vw;
   }
 
   .form-area {
-    /* display: revert; */
+    display: inherit;
     background: #f9f9fa;
     position: relative;
     width: 100vw;
@@ -1724,7 +1725,8 @@ footer {
   }
 
   #messageEmail {
-    margin-left: 40%;
+    margin: auto;
+    margin-left: 338px;
     position: absolute;
     z-index: 99;
     bottom: 32%;
