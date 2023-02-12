@@ -39,7 +39,7 @@ function validateDesk() {
     return true;
   }
   email.style.borderColor = 'red';
-  message.innerText = 'remove ALL Uppercase characters please';
+  message.innerText = 'Emails cannot take CAPITAL Letters submit valid email';
   message.style.color = 'red';
   return false;
 }
@@ -58,7 +58,7 @@ function validateMobile() {
     return true;
   }
   mobileEmail.style.borderColor = 'red';
-  messageMobile.innerText = 'remove ALL Uppercase characters please';
+  messageMobile.innerText = 'Emails cannot take CAPITAL Letters submit valid email';
   messageMobile.style.color = 'red';
   return false;
 }
