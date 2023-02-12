@@ -538,7 +538,7 @@ h2 {
   text-decoration: none;
   color: #1a2236;
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
+  font-weight: 500.1;
   margin-right: 0%;
   font-size: 1rem;
 }
@@ -654,7 +654,7 @@ h2 {
   font-size: 15vw;
   line-height: 100%;
   color: #1a2236;
-  margin-left: 1.5rem;
+  margin-left: 1.51rem;
   margin-bottom: 2rem;
 }
 
@@ -684,7 +684,7 @@ input[type=text] {
 input[type=text]::placeholder {
   font-family: var(--font-family-body);
   position: relative;
-  left: 0.8rem;
+  left: 0.81rem;
   bottom: 0.5rem;
 }
 
@@ -713,7 +713,7 @@ input[type=email]::placeholder {
 
 textarea {
   width: var(--button-SC-width);
-  margin-left: 1.5rem;
+  margin-left: 1.51rem;
   height: 112px;
   background: #fff;
   border: 1px solid #dfdfe0;
