@@ -1,72 +1,72 @@
 // const { messages } = require("stylelint/lib/rules/alpha-value-notation");
-const projectsID = [
-  {
-    id: 1,
-    name: 'Project name gors here',
-    paragraph1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    paragraph2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    'mobile image': 'images.svg/Rectangle 34.svg',
-    'desktop image': 'images.svg/Rectangle 34 (1).svg',
-    technologies: ['Ruby', 'CSS', 'JavaScript', 'Bootstrap'],
-    liveVersion: '#',
-    source: '#',
-  },
-  {
-    id: 2,
-    name: 'Project name gors here',
-    paragraph1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    paragraph2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    'mobile image': 'images.svg/Rectangle 34.svg',
-    'desktop image': 'images.svg/Rectangle 34 (1).svg',
-    technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
-    liveVersion: '#',
-    source: '#',
-  },
-  {
-    id: 3,
-    name: 'Project name gors here',
-    paragraph1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    paragraph2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    'mobile image': 'images.svg/Rectangle 34.svg',
-    'desktop image': 'images.svg/Rectangle 34 (1).svg',
-    technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
-    liveVersion: '#',
-    source: '#',
-  },
-  {
-    id: 4,
-    name: 'Project name gors here',
-    paragraph1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    paragraph2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    'mobile image': 'images.svg/Rectangle 34.svg',
-    'desktop image': 'images.svg/Rectangle 34 (1).svg',
-    technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
-    liveVersion: '#',
-    source: '#',
-  },
-  {
-    id: 5,
-    name: 'Project name gors here',
-    paragraph1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    paragraph2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    'mobile image': 'images.svg/Rectangle 34.svg',
-    'desktop image': 'images.svg/Rectangle 34 (1).svg',
-    technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
-    liveVersion: '#',
-    source: '#',
-  },
-  {
-    id: 6,
-    name: 'Project name gors here',
-    paragraph1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    paragraph2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    'mobile image': 'images.svg/Rectangle 34.svg',
-    'desktop image': 'images.svg/Rectangle 34 (1).svg',
-    technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
-    liveVersion: '#',
-    source: '#',
-  },
-];
+// const projectsID = [
+//   {
+//     id: 1,
+//     name: 'Project name gors here',
+//     paragraph1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+//     paragraph2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+//     'mobile image': 'images.svg/Rectangle 34.svg',
+//     'desktop image': 'images.svg/Rectangle 34 (1).svg',
+//     technologies: ['Ruby', 'CSS', 'JavaScript', 'Bootstrap'],
+//     liveVersion: '#',
+//     source: '#',
+//   },
+//   {
+//     id: 2,
+//     name: 'Project name gors here',
+//     paragraph1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+//     paragraph2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+//     'mobile image': 'images.svg/Rectangle 34.svg',
+//     'desktop image': 'images.svg/Rectangle 34 (1).svg',
+//     technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
+//     liveVersion: '#',
+//     source: '#',
+//   },
+//   {
+//     id: 3,
+//     name: 'Project name gors here',
+//     paragraph1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+//     paragraph2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+//     'mobile image': 'images.svg/Rectangle 34.svg',
+//     'desktop image': 'images.svg/Rectangle 34 (1).svg',
+//     technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
+//     liveVersion: '#',
+//     source: '#',
+//   },
+//   {
+//     id: 4,
+//     name: 'Project name gors here',
+//     paragraph1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+//     paragraph2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+//     'mobile image': 'images.svg/Rectangle 34.svg',
+//     'desktop image': 'images.svg/Rectangle 34 (1).svg',
+//     technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
+//     liveVersion: '#',
+//     source: '#',
+//   },
+//   {
+//     id: 5,
+//     name: 'Project name gors here',
+//     paragraph1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+//     paragraph2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+//     'mobile image': 'images.svg/Rectangle 34.svg',
+//     'desktop image': 'images.svg/Rectangle 34 (1).svg',
+//     technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
+//     liveVersion: '#',
+//     source: '#',
+//   },
+//   {
+//     id: 6,
+//     name: 'Project name gors here',
+//     paragraph1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+//     paragraph2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+//     'mobile image': 'images.svg/Rectangle 34.svg',
+//     'desktop image': 'images.svg/Rectangle 34 (1).svg',
+//     technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
+//     liveVersion: '#',
+//     source: '#',
+//   },
+// ];
 const menu = document.querySelector('#menu-whole');
 const cancel = document.querySelector('#cancel');
 const menulist = document.querySelectorAll('.h-menu');
@@ -110,7 +110,7 @@ const projectsMobile = document.querySelector('#portfolio-mobile');
 // const projectsDesktop = document.querySelector('.grid');
 function JSprojectDesktop() {
   const projectsDesktop = document.querySelector('.grid');
-  projectsDesktop.insertAdjacentHTML('beforeend', `<div class="grid-1">    
+  projectsDesktop.innerHTML = `<div class="grid-1">    
   <div class="project-grid"></div>
   <div class="dots"></div>
   </div>
@@ -156,64 +156,63 @@ function JSprojectDesktop() {
   <div class="grid-8"></div>
   <div class="grid-9"></div>
   <div class="grid-10"><img src="images.svg/Rectangle 47.svg" alt="project-image-desktop-5"></div>
-  <div class="popup-window-desktop-container" id="popup-window-desktop-container"></div>`);
+  <div class="popup-window-desktop-container" id="popup-window-desktop-container"></div>`;
   const popupwindowDesktop = document.querySelector('.popup-window-desktop-container');
   const seeprojectDesktop = document.querySelectorAll('.see-this-project');
 
   function popupwindowDesktopFunc() {
     overlay.classList.add('active');
-    projectsID.forEach((project) => {
-      popupwindowDesktop.insertAdjacentHTML('beforeend', `<div class="blue-background">
-    <div class="pop-up-window-desktop">
-        <div id="carousel-cancel-desk"><img src="images.svg/ic_cross.svg" alt=""></div>
-        <h3>${project.name}</h3>
-        <ul class="pop-up-languages-desk">
-            <li>${project.technologies[0]}</li>
-            <li>${project.technologies[1]}</li>
-            <li>${project.technologies[2]}</li>
-        </ul>
-        <div class="carousel-desk">
-            <button id="slide-left-desk">
-                <img src="images.svg/Vector 4.svg" alt="">
-            </button>
-            <ul class="carousel-track-desk">
-                <li class="carousel-slide-desk"><img src="images.svg/Rectangle 34 (1).svg" class="carousel-images-desk" alt=""></li>
-                <li class="carousel-slide-desk"><img src="images.svg/Rectangle 34 (1).svg" class="carousel-images-desk" alt=""></li>
-                <li class="carousel-slide-desk"><img src="images.svg/Rectangle 34 (1).svg" class="carousel-images-desk" alt=""></li>
-                <li class="carousel-slide-desk"><img src="images.svg/Rectangle 34 (1).svg" class="carousel-images-desk" alt=""></li>
+    popupwindowDesktop.innerHTML = `<div class="blue-background">
+      <div class="pop-up-window-desktop">
+          <div id="carousel-cancel-desk"><img src="images.svg/ic_cross.svg" alt=""></div>
+          <h3>Project Name goes here</h3>
+            <ul class="pop-up-languages-desk">
+                <li>HTML/CSS</li>
+                <li>Ruby on Rails</li>
+                <li>JavaScript</li>
             </ul>
-            <button id="slide-right-desk">
-                <img src="images.svg/Vector 5.svg" alt="">
-            </button>
-        </div>
-        <div class="carousel-nav-desk">
-            <img src="images.svg/Rectangle 41 (2).svg" class="carousel-nav-images-desk  carousel-indicator" alt="">
-            <img src="images.svg/Rectangle 27 (2).svg" class="carousel-nav-images-desk" alt="">
-            <img src="images.svg/Rectangle 41 (2).svg" class="carousel-nav-images-desk" alt="">
-            <img src="images.svg/Rectangle 41 (2).svg" class="carousel-nav-images-desk" alt="">
-        </div>
-        <div class="rest-of-the-page-desk">
-            <P id="paragraph-1-desk">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</P>
-
-        <p id="paragraph-2-desk"> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</P>
-        <div class="pop-up-buttons-desk">
-            <button id="first-button-desk"><a href="">See live</a>  <img src="images.svg/Union (10).svg" alt=""></button>
-            <button><a href="">See source</a>   <img src="images.svg/Vector (31).svg" alt=""></button>
-        </div>
-        <div class="direction-desk">
-            <div class="direction-left-desk">
-                <img src="images.svg/Union (11).svg" alt="">
-                Previous project
-            </div>
-            <div class="direction-right-desk">
-                Next project
-                <img src="images.svg/Union (12).svg" alt="">
-            </div>
-        </div>
-        </div>
-    </div> 
-</div>`);
-    });
+          <div class="carousel-desk">
+              <button id="slide-left-desk">
+                  <img src="images.svg/Vector 4.svg" alt="">
+              </button>
+              <ul class="carousel-track-desk">
+                  <li class="carousel-slide-desk"><img src="images.svg/Rectangle 34 (1).svg" class="carousel-images-desk" alt=""></li>
+                  <li class="carousel-slide-desk"><img src="images.svg/Rectangle 34 (1).svg" class="carousel-images-desk" alt=""></li>
+                  <li class="carousel-slide-desk"><img src="images.svg/Rectangle 34 (1).svg" class="carousel-images-desk" alt=""></li>
+                  <li class="carousel-slide-desk"><img src="images.svg/Rectangle 34 (1).svg" class="carousel-images-desk" alt=""></li>
+              </ul>
+              <button id="slide-right-desk">
+                  <img src="images.svg/Vector 5.svg" alt="">
+              </button>
+          </div>
+          <div class="carousel-nav-desk">
+              <img src="images.svg/Rectangle 41 (2).svg" class="carousel-nav-images-desk  carousel-indicator" alt="">
+              <img src="images.svg/Rectangle 27 (2).svg" class="carousel-nav-images-desk" alt="">
+              <img src="images.svg/Rectangle 41 (2).svg" class="carousel-nav-images-desk" alt="">
+              <img src="images.svg/Rectangle 41 (2).svg" class="carousel-nav-images-desk" alt="">
+          </div>
+          <div class="rest-of-the-page-desk">
+              <P id="paragraph-1-desk">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</P>
+  
+          <p id="paragraph-2-desk"> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</P>
+          <div class="pop-up-buttons-desk">
+              <button id="first-button-desk"><a href="">See live</a>  <img src="images.svg/Union (10).svg" alt=""></button>
+              <button><a href="">See source</a>   <img src="images.svg/Vector (31).svg" alt=""></button>
+          </div>
+          <div class="direction-desk">
+              <div class="direction-left-desk">
+                  <img src="images.svg/Union (11).svg" alt="">
+                  Previous project
+              </div>
+              <div class="direction-right-desk">
+                  Next project
+                  <img src="images.svg/Union (12).svg" alt="">
+              </div>
+          </div>
+          </div>
+      </div> 
+  </div>`;
+    // popupwindowDesktop.scrollIntoView({ behavior: 'smooth' });
     const cancelpopup = document.querySelector('#carousel-cancel-desk');
     function hidepopup() {
       popupwindowDesktop.innerHTML = '';
@@ -224,7 +223,7 @@ function JSprojectDesktop() {
 
   seeprojectDesktop.forEach((btn) => btn.addEventListener('click', popupwindowDesktopFunc));
   function JsprojectMobile() {
-    projectsMobile.insertAdjacentHTML('beforeend', `<div class="projects"><h2 >Projects</h2></div>
+    projectsMobile.innerHTML = `<div class="projects"><h2 >Projects</h2></div>
     <div class="project project-items-1">
         <img src="images.svg/Rectangle 21 (19).svg" class="project-image" alt="project-image-1">
         <div class="languages">
@@ -327,19 +326,18 @@ function JSprojectDesktop() {
             </button>
         </div>
     </div>
-    <div id="popup-window-mobile-container"></div>`);
+    <div id="popup-window-mobile-container"></div>`;
     const seeprojectMobile = document.querySelectorAll('.see-this-project-mobile');
     const popupwindowMobile = document.querySelector('#popup-window-mobile-container');
     function popupwindowMobileFunc() {
       overlay.classList.add('active');
-      projectsID.forEach((project) => {
-        popupwindowMobile.insertAdjacentHTML('afterbegin', `<div class="pop-up-window">
+      popupwindowMobile.innerHTML = `<div class="pop-up-window">
         <div class="carousel-cancel"><img src="images.svg/ic_cross.svg" alt=""></div>
-        <h3>${project.name}</h3>
+        <h3>Project Name goes here</h3>
         <ul class="pop-up-languages">
-            <li>${project.technologies[0]}</li>
-            <li>${project.technologies[1]}</li>
-            <li>${project.technologies[2]}</li>
+            <li>HTML/CSS</li>
+            <li>Ruby on Rails</li>
+            <li>JavaScript</li>
         </ul>
         <div class="carousel">
             <button id="slide-left">
@@ -371,8 +369,8 @@ function JSprojectDesktop() {
             <button><a href="">See source</a>   <img src="images.svg/Vector (31).svg" alt=""></button>
         </div>
     </div>
-</div>`);
-      });
+</div>`;
+      popupwindowMobile.scrollIntoView({ behavior: 'smooth' });
       const cancelpopupMobile = document.querySelectorAll('.carousel-cancel');
       function hidepopupMobile() {
         popupwindowMobile.innerHTML = '';
@@ -381,6 +379,7 @@ function JSprojectDesktop() {
       cancelpopupMobile.forEach((button) => button.addEventListener('click', hidepopupMobile));
     }
     seeprojectMobile.forEach((button) => button.addEventListener('click', popupwindowMobileFunc));
+    seeprojectMobile.forEach((button) => button.addEventListener('click', () => {popupwindowMobile.scrollIntoView({ behavior: 'smooth' })}));
   }
   JsprojectMobile();
 }
