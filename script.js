@@ -3,8 +3,8 @@
 //   {
 //     id: 1,
 //     name: 'Project name gors here',
-//     paragraph1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-//     paragraph2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+//     paragraph1: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
+//     paragraph2: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
 //     'mobile image': 'images.svg/Rectangle 34.svg',
 //     'desktop image': 'images.svg/Rectangle 34 (1).svg',
 //     technologies: ['Ruby', 'CSS', 'JavaScript', 'Bootstrap'],
@@ -14,8 +14,8 @@
 //   {
 //     id: 2,
 //     name: 'Project name gors here',
-//     paragraph1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-//     paragraph2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+//     paragraph1: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
+//     paragraph2: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
 //     'mobile image': 'images.svg/Rectangle 34.svg',
 //     'desktop image': 'images.svg/Rectangle 34 (1).svg',
 //     technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
@@ -25,8 +25,8 @@
 //   {
 //     id: 3,
 //     name: 'Project name gors here',
-//     paragraph1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-//     paragraph2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+//     paragraph1: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
+//     paragraph2: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
 //     'mobile image': 'images.svg/Rectangle 34.svg',
 //     'desktop image': 'images.svg/Rectangle 34 (1).svg',
 //     technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
@@ -36,8 +36,8 @@
 //   {
 //     id: 4,
 //     name: 'Project name gors here',
-//     paragraph1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-//     paragraph2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+//     paragraph1: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
+//     paragraph2: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
 //     'mobile image': 'images.svg/Rectangle 34.svg',
 //     'desktop image': 'images.svg/Rectangle 34 (1).svg',
 //     technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
@@ -47,8 +47,8 @@
 //   {
 //     id: 5,
 //     name: 'Project name gors here',
-//     paragraph1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-//     paragraph2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+//     paragraph1: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
+//     paragraph2: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
 //     'mobile image': 'images.svg/Rectangle 34.svg',
 //     'desktop image': 'images.svg/Rectangle 34 (1).svg',
 //     technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
@@ -58,8 +58,8 @@
 //   {
 //     id: 6,
 //     name: 'Project name gors here',
-//     paragraph1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-//     paragraph2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+//     paragraph1: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
+//     paragraph2: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
 //     'mobile image': 'images.svg/Rectangle 34.svg',
 //     'desktop image': 'images.svg/Rectangle 34 (1).svg',
 //     technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
@@ -379,7 +379,7 @@ function JSprojectDesktop() {
       cancelpopupMobile.forEach((button) => button.addEventListener('click', hidepopupMobile));
     }
     seeprojectMobile.forEach((button) => button.addEventListener('click', popupwindowMobileFunc));
-    seeprojectMobile.forEach((button) => button.addEventListener('click', () => {popupwindowMobile.scrollIntoView({ behavior: 'smooth' })}));
+    seeprojectMobile.forEach((button) => button.addEventListener('click', () => { popupwindowMobile.scrollIntoView({ behavior: 'smooth' }); }));
   }
   JsprojectMobile();
 }
