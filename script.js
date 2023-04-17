@@ -76,7 +76,6 @@ const mobileheader = document.querySelector('.mobile-header');
 const overlay = document.querySelector('#overlay');
 // const seeprojectDesktop = document.querySelectorAll('.see-this-project');
 // const formbutton = document.querySelector('.Start-collab-2');
-
 function display() {
   if (menu.style.display === 'none') {
     menu.style.display = 'block';
@@ -96,7 +95,6 @@ function hide() {
   hamburger.style.display = 'block';
   main.style.display = 'block';
 }
-
 hamburger.addEventListener('click', display);
 cancel.addEventListener('click', hide);
 
