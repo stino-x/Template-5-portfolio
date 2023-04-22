@@ -7,29 +7,26 @@ const messageMobile = document.querySelector('#messageEmail-mobile');
 const nameInput = document.querySelector('.name');
 const emailInput = document.querySelector('.email');
 const messageInput = document.querySelector('.message');
-const rawData = localStorage.getItem('cachedFormData');
+const savedData = JSON.parse(localStorage.getItem('formData')) || {};
 
-const formobject = {
-  name: '',
-  email: '',
-  message: '',
-};
-
-if (rawData) {
-  const formobject = JSON.parse(rawData);
-  emailInput.value = formobject.email;
-  nameInput.value = formobject.name;
-  messageInput.value = formobject.message;
+if (savedData) {
+  nameInput.value = savedData.name;
+  emailInput.value = savedData.email;
+  messageInput.value = savedData.message;
 }
 
-const dataStore = (event) => {
-  const element = event.target;
-  formobject[element.name] = element.value;
-  localStorage.setItem('cachedFormData', JSON.stringify(formobject));
+const saveData = () => {
+  const formData = {
+    name: nameInput.value,
+    email: emailInput.value,
+    message: messageInput.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
 };
-nameInput.addEventListener('change', dataStore);
-emailInput.addEventListener('change', dataStore);
-messageInput.addEventListener('change', dataStore);
+
+nameInput.addEventListener('input', saveData);
+emailInput.addEventListener('input', saveData);
+messageInput.addEventListener('input', saveData);
 
 function validateDesk() {
   const compare = email.value.toLowerCase();
