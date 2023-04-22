@@ -147,7 +147,6 @@ body {
   width: 25%;
   height: 90%;
   list-style: none;
-  align-self: 50%;
   grid-column: 2 / 2;
   grid-row: 2 / 2;
   text-align: center;
@@ -156,11 +155,6 @@ body {
   grid-template-rows: repeat(4, 1fr);
 }
 
-/* .menu ul a {
-  text-decoration: none;
-  color: #1a2236;
-} */
-
 .h-menu {
   width: 100%;
 }
@@ -168,7 +162,7 @@ body {
 .bottom-part {
   background-image: url('images.svg/Mask Group (1).svg');
   background-repeat: no-repeat;
-  width: 100;
+  width: 100%;
   height: 18%;
   background-size: 100%;
 }
@@ -384,13 +378,12 @@ h2 {
 }
 
 .pop-up-window {
-  position: absolute;
   z-index: 10;
   background-color: #fff;
   top: 40%;
 }
 
-.pop-up-window #carousel-cancel {
+.pop-up-window .carousel-cancel {
   margin-top: 5%;
   margin-left: 90%;
   margin-bottom: 6%;
@@ -401,8 +394,23 @@ h2 {
 #popup-window-mobile-container {
   position: relative;
   width: 100%;
-  height: 100%;
-  z-index: 10;
+  height: 400%;
+  left: 0;
+  right: 0;
+  transform: translate(0, 0);
+  z-index: 5;
+  overflow-y: scroll;
+}
+
+.popup-window-desktop-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translate(0, 0);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .pop-up-window h3 {
@@ -537,7 +545,7 @@ h2 {
   text-decoration: none;
   color: #1a2236;
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
+  font-weight: 500.1;
   margin-right: 0%;
   font-size: 1rem;
 }
@@ -653,7 +661,7 @@ h2 {
   font-size: 15vw;
   line-height: 100%;
   color: #1a2236;
-  margin-left: 1.5rem;
+  margin-left: 1.51rem;
   margin-bottom: 2rem;
 }
 
@@ -665,7 +673,7 @@ form {
 }
 
 input[type=text] {
-  width: min(90vw, 700px);
+  width: var(--button-SC-width);
   margin-left: 1.5rem;
   height: 52px;
   background: #fff;
@@ -683,12 +691,12 @@ input[type=text] {
 input[type=text]::placeholder {
   font-family: var(--font-family-body);
   position: relative;
-  left: 0.8rem;
+  left: 0.81rem;
   bottom: 0.5rem;
 }
 
 input[type=email] {
-  width: min(90vw, 700px);
+  width: var(--button-SC-width);
   margin-left: 1.5rem;
   height: 52px;
   background: #fff;
@@ -711,8 +719,8 @@ input[type=email]::placeholder {
 }
 
 textarea {
-  width: min(90vw, 700px);
-  margin-left: 1.5rem;
+  width: var(--button-SC-width);
+  margin-left: 1.51rem;
   height: 112px;
   background: #fff;
   border: 1px solid #dfdfe0;
@@ -741,7 +749,7 @@ textarea::placeholder {
   border-color: transparent;
   height: 50px;
   font-family: var(--font-family-body);
-  width: min(90vw, 700px);
+  width: var(--button-SC-width);
 }
 
 #form-button:hover {
@@ -753,6 +761,7 @@ textarea::placeholder {
 
 small {
   font-family: var(--font-family-body);
+  margin: auto;
 }
 
 footer {
@@ -791,6 +800,7 @@ footer {
     --header-list-size: 1.5vw;
     --form-h1-size: 10vw;
     --form-p-size: clamp(0.9rem, -1.2999999999999967rem + 4.999999999999993vw, 1.2rem);
+    --grid-2-grid-2: min(3rem, 5vw);
   }
 
   main {
@@ -819,12 +829,12 @@ footer {
   }
 
   .page-one {
-    display: revert;
+    display: inherit;
     width: 100vw;
   }
 
   .form-area {
-    display: revert;
+    display: inherit;
     background: #f9f9fa;
     position: relative;
     width: 100vw;
@@ -954,7 +964,7 @@ footer {
   .desktop-image-1 {
     position: relative;
     width: 50vw;
-    size: 4vw;
+    font-size: 4vw;
   }
 
   .Start-collab {
@@ -1022,7 +1032,7 @@ footer {
 
   .grid-2-grid-1 img {
     z-index: 0;
-    object-fit: 100%;
+    object-fit: cover;
     height: 100%;
   }
 
@@ -1038,7 +1048,6 @@ footer {
     width: 100%;
     height: 100%;
     background: transparent;
-    backdrop-filter: 0;
   }
 
   .grid-2-grid-2 h2 {
@@ -1048,7 +1057,7 @@ footer {
     font-style: normal;
     font-weight: 700;
     font-size: 5vw;
-    font-size: min(3rem, 5vw);
+    font-size: var(--grid-2-grid-2);
     line-height: 80%;
     margin-left: 3vw;
     margin-top: 5%;
@@ -1158,7 +1167,6 @@ footer {
     width: 100%;
     height: 100%;
     background: transparent;
-    backdrop-filter: 0;
     position: relative;
   }
 
@@ -1278,6 +1286,11 @@ footer {
     height: 100%;
   }
 
+  .carousel-desk button {
+    height: 100%;
+    width: 100%;
+  }
+
   .grid button:hover {
     background-color: var(--color-bg-1);
     color: white;
@@ -1290,32 +1303,36 @@ footer {
   }
 
   .media img {
-    size: 5vw;
+    font-size: 5vw;
     margin-top: 0;
   }
 
   .grid-2 img:hover {
-    transform: scale(150%);
+    transform: scale(1.5);
   }
 
   .grid-3 img:hover {
-    transform: scale(150%);
+    transform: scale(1.5);
   }
 
   .grid-5 img:hover {
-    transform: scale(150%);
+    transform: scale(1.5);
   }
 
   .grid-6 img:hover {
-    transform: scale(150%);
+    transform: scale(1.5);
   }
 
-  /* .popup-window-desktop-container {
-    position: absolute;
+  .popup-window-desktop-container {
+    position: fixed;
     top: 0;
+    bottom: 0;
     left: 0;
-    z-index: 20;
-  } */
+    right: 0;
+    transform: translate(0, 0);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
 
   .blue-background {
     width: 100vw;
@@ -1338,10 +1355,6 @@ footer {
     width: 90%;
     height: 100%;
   }
-
-  /* .pop-up-header {
-    display: flex;
-  } */
 
   .pop-up-window-desktop h3 {
     font-family: 'Poppins', sans-serif;
@@ -1367,31 +1380,23 @@ footer {
     margin-bottom: 6%;
   }
 
-  /* .pop-up-languages-desk li {
-    border: 0.516669px solid #1a2236;
-    padding: 0.4%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    font-family: 'Poppins', sans-serif;
-    color: #1a2236;
-  } */
-
   .carousel-desk {
     position: relative;
-    width: 98vw;
+    width: 100%;
+    height: 1%;
   }
 
   #slide-left-desk {
     position: absolute;
     top: 45vh;
-    left: 5vw;
+    left: 0.8vw;
     z-index: 1;
   }
 
   #slide-right-desk {
     position: absolute;
     top: 45vh;
-    left: 76vw;
+    left: 70vw;
     z-index: 1;
   }
 
@@ -1417,10 +1422,15 @@ footer {
   .carousel-nav-desk {
     width: 81.5vw;
     position: absolute;
-    top: 45.8%;
-    left: 5%;
+    top: 45.58%;
+    left: 4.2%;
     margin-bottom: 20%;
   }
+
+  /* .carousel-nav-desk img {
+    width: 20%;
+    position: absolute;
+  } */
 
   .carousel-nav-images-desk {
     width: 22.1%;
@@ -1469,6 +1479,11 @@ footer {
     gap: 3%;
   }
 
+  .pop-up-buttons-desk button:hover {
+    background-color: #1a2236;
+    color: white;
+  }
+
   .pop-up-buttons-desk button a {
     text-decoration: none;
     color: #1a2236;
@@ -1478,13 +1493,14 @@ footer {
     font-size: 1rem;
   }
 
+  .pop-up-buttons-desk button a:hover {
+    background-color: #1a2236;
+    color: white;
+  }
+
   .pop-up-buttons-desk #first-button-desk {
     margin-left: 10%;
   }
-
-  /* .pop-up-buttons-desk button img {
-      margin-left: 5%;
-  } */
 
   .direction-desk {
     position: relative;
@@ -1713,14 +1729,20 @@ footer {
   }
 
   .desk-form .Start-collab-2 {
-    /* grid-column-start: 1;
-    grid-column-end: 2; */
     position: relative;
     width: 20vw;
     height: 6vw;
     font-size: 1.5vw;
     margin-left: 43%;
     top: 15%;
+  }
+
+  #messageEmail {
+    margin: auto;
+    margin-left: 338px;
+    position: absolute;
+    z-index: 99;
+    bottom: 32%;
   }
 
   .Get-started .bottom-left {
@@ -1773,5 +1795,98 @@ footer {
     gap: 5vw;
     position: relative;
     margin-left: 25%;
+  }
+}
+
+@media screen and (min-width: 786px) and (max-width: 900px) {
+  .rest-of-the-page-desk {
+    margin-top: 55%;
+    margin-right: 0;
+    margin-left: 5%;
+    padding-top: 5%;
+    width: 90%;
+    position: relative;
+  }
+
+  .carousel-nav-desk {
+    width: 81.5vw;
+    position: absolute;
+    top: 30.8%;
+    left: 4.2%;
+    margin-bottom: 20%;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 988px) {
+  .rest-of-the-page-desk {
+    margin-top: 58%;
+    margin-right: 0;
+    margin-left: 5%;
+    padding-top: 5%;
+    width: 90%;
+    position: relative;
+  }
+
+  .carousel-nav-desk {
+    width: 81.5vw;
+    position: absolute;
+    top: 33.8%;
+    left: 4.2%;
+    margin-bottom: 20%;
+  }
+
+  .popup-window-desktop-container {
+    height: 100%;
+  }
+
+  #slide-left-desk {
+    position: absolute;
+    top: 45vh;
+    left: 0.8vw;
+    z-index: 1;
+    bottom: 55vh;
+  }
+
+  #slide-right-desk {
+    position: absolute;
+    top: 45vh;
+    left: 70vw;
+    z-index: 1;
+    bottom: 55vh;
+  }
+}
+
+@media screen and (min-width: 988px) and (max-width: 1115px) {
+  .rest-of-the-page-desk {
+    margin-top: 59%;
+    margin-right: 0;
+    margin-left: 5%;
+    padding-top: 5%;
+    width: 90%;
+    position: relative;
+  }
+
+  .carousel-nav-desk {
+    width: 81.5vw;
+    position: absolute;
+    top: 36%;
+    left: 4.2%;
+    margin-bottom: 20%;
+  }
+
+  #slide-left-desk {
+    position: absolute;
+    top: 45vh;
+    left: 0.8vw;
+    z-index: 1;
+    bottom: 55vh;
+  }
+
+  #slide-right-desk {
+    position: absolute;
+    top: 45vh;
+    left: 70vw;
+    z-index: 1;
+    bottom: 55vh;
   }
 }
