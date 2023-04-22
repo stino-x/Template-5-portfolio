@@ -1,72 +1,3 @@
-// const { messages } = require("stylelint/lib/rules/alpha-value-notation");
-// const projectsID = [
-//   {
-//     id: 1,
-//     name: 'Project name gors here',
-//     paragraph1: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
-//     paragraph2: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
-//     'mobile image': 'images.svg/Rectangle 34.svg',
-//     'desktop image': 'images.svg/Rectangle 34 (1).svg',
-//     technologies: ['Ruby', 'CSS', 'JavaScript', 'Bootstrap'],
-//     liveVersion: '#',
-//     source: '#',
-//   },
-//   {
-//     id: 2,
-//     name: 'Project name gors here',
-//     paragraph1: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
-//     paragraph2: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
-//     'mobile image': 'images.svg/Rectangle 34.svg',
-//     'desktop image': 'images.svg/Rectangle 34 (1).svg',
-//     technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
-//     liveVersion: '#',
-//     source: '#',
-//   },
-//   {
-//     id: 3,
-//     name: 'Project name gors here',
-//     paragraph1: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
-//     paragraph2: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
-//     'mobile image': 'images.svg/Rectangle 34.svg',
-//     'desktop image': 'images.svg/Rectangle 34 (1).svg',
-//     technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
-//     liveVersion: '#',
-//     source: '#',
-//   },
-//   {
-//     id: 4,
-//     name: 'Project name gors here',
-//     paragraph1: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
-//     paragraph2: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
-//     'mobile image': 'images.svg/Rectangle 34.svg',
-//     'desktop image': 'images.svg/Rectangle 34 (1).svg',
-//     technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
-//     liveVersion: '#',
-//     source: '#',
-//   },
-//   {
-//     id: 5,
-//     name: 'Project name gors here',
-//     paragraph1: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
-//     paragraph2: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
-//     'mobile image': 'images.svg/Rectangle 34.svg',
-//     'desktop image': 'images.svg/Rectangle 34 (1).svg',
-//     technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
-//     liveVersion: '#',
-//     source: '#',
-//   },
-//   {
-//     id: 6,
-//     name: 'Project name gors here',
-//     paragraph1: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
-//     paragraph2: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
-//     'mobile image': 'images.svg/Rectangle 34.svg',
-//     'desktop image': 'images.svg/Rectangle 34 (1).svg',
-//     technologies: ['HTML/CSS', 'RUBY ON RAILS', 'JAVASCRIPT'],
-//     liveVersion: '#',
-//     source: '#',
-//   },
-// ];
 const menu = document.querySelector('#menu-whole');
 const cancel = document.querySelector('#cancel');
 const menulist = document.querySelectorAll('.h-menu');
@@ -74,8 +5,6 @@ const main = document.querySelector('main');
 const hamburger = document.querySelector('#hamburger');
 const mobileheader = document.querySelector('.mobile-header');
 const overlay = document.querySelector('#overlay');
-// const seeprojectDesktop = document.querySelectorAll('.see-this-project');
-// const formbutton = document.querySelector('.Start-collab-2');
 function display() {
   if (menu.style.display === 'none') {
     menu.style.display = 'block';
@@ -105,7 +34,6 @@ for (let i = 0; i < menulist.length; i += 1) {
 // MOBILE-POPUP-MENU
 // DESKTOP-POPUP-MENU
 const projectsMobile = document.querySelector('#portfolio-mobile');
-// const projectsDesktop = document.querySelector('.grid');
 function JSprojectDesktop() {
   const projectsDesktop = document.querySelector('.grid');
   projectsDesktop.innerHTML = `<div class="grid-1">    
@@ -157,7 +85,6 @@ function JSprojectDesktop() {
   <div class="popup-window-desktop-container" id="popup-window-desktop-container"></div>`;
   const popupwindowDesktop = document.querySelector('.popup-window-desktop-container');
   const seeprojectDesktop = document.querySelectorAll('.see-this-project');
-
   function popupwindowDesktopFunc() {
     overlay.classList.add('active');
     popupwindowDesktop.innerHTML = `<div class="blue-background">
@@ -170,18 +97,20 @@ function JSprojectDesktop() {
                 <li>JavaScript</li>
             </ul>
           <div class="carousel-desk">
-              <button id="slide-left-desk">
-                  <img src="images.svg/Vector 4.svg" alt="">
-              </button>
+              
+                  
+              
               <ul class="carousel-track-desk">
+              <img src="images.svg/Vector 4.svg" id="slide-left-desk" alt="">
                   <li class="carousel-slide-desk"><img src="images.svg/Rectangle 34 (1).svg" class="carousel-images-desk" alt=""></li>
                   <li class="carousel-slide-desk"><img src="images.svg/Rectangle 34 (1).svg" class="carousel-images-desk" alt=""></li>
                   <li class="carousel-slide-desk"><img src="images.svg/Rectangle 34 (1).svg" class="carousel-images-desk" alt=""></li>
                   <li class="carousel-slide-desk"><img src="images.svg/Rectangle 34 (1).svg" class="carousel-images-desk" alt=""></li>
+              <img src="images.svg/Vector 5.svg" id="slide-right-desk" alt="">    
               </ul>
-              <button id="slide-right-desk">
-                  <img src="images.svg/Vector 5.svg" alt="">
-              </button>
+              
+                  
+              
           </div>
           <div class="carousel-nav-desk">
               <img src="images.svg/Rectangle 41 (2).svg" class="carousel-nav-images-desk  carousel-indicator" alt="">
@@ -210,11 +139,13 @@ function JSprojectDesktop() {
           </div>
       </div> 
   </div>`;
-    // popupwindowDesktop.scrollIntoView({ behavior: 'smooth' });
+    popupwindowDesktop.style.zIndex = '99';
+    popupwindowDesktop.scrollIntoView({ behavior: 'smooth' });
     const cancelpopup = document.querySelector('#carousel-cancel-desk');
     function hidepopup() {
       popupwindowDesktop.innerHTML = '';
       overlay.classList.remove('active');
+      popupwindowDesktop.style.zIndex = '-5';
     }
     cancelpopup.addEventListener('click', hidepopup);
   }
@@ -369,10 +300,22 @@ function JSprojectDesktop() {
     </div>
 </div>`;
       popupwindowMobile.scrollIntoView({ behavior: 'smooth' });
+      const previouspadding = document.body.style.paddingBottom;
+      popupwindowMobile.style.height = '190vh';
+      popupwindowMobile.style.paddingBottom = '39%';
+      // Store the previous value of overflow-y
+      const previousOverflowY = document.body.style.overflowY;
+      // Set overflow-y to hidden
+      document.body.style.overflowY = 'hidden';
+      // Restore the previous value of overflow-y
       const cancelpopupMobile = document.querySelectorAll('.carousel-cancel');
       function hidepopupMobile() {
         popupwindowMobile.innerHTML = '';
         overlay.classList.remove('active');
+        popupwindowMobile.style.position = 'relative';
+        popupwindowMobile.style.height = '100%';
+        document.body.style.overflowY = previousOverflowY;
+        document.body.style.padding = previouspadding;
       }
       cancelpopupMobile.forEach((button) => button.addEventListener('click', hidepopupMobile));
     }
@@ -381,5 +324,4 @@ function JSprojectDesktop() {
   }
   JsprojectMobile();
 }
-
 window.onload = JSprojectDesktop;
