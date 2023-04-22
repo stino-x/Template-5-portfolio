@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title> 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title> 
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,7 +42,7 @@
             Hello! I am a software developer! I can help you build a product, feature or website. Take a look of my works.
 If you like what you see and have a project you need coded, don’t hesitate and contact me.
         </p>
-        <button class="Start-collab">Start collaboration</button>
+        <button type="submit" class="Start-collab">Start collaboration</button>
         </section>            
         <div class="image-1-wrapper"><div class="image-1"></div></div>
         <!-- desktop version -->
@@ -62,7 +62,7 @@ If you like what you see and have a project you need coded, don’t hesitate and
                         Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works.
             If you like what you see and have a project you need coded, don’t hesitate and contact me.
                     </p>
-                    <button class="Start-collab">Start collaboration</button> 
+                    <button type = "submit" class="Start-collab">Start collaboration</button> 
                 </div>
                 <div class="D-S-1-image">
                 <img src="images.svg/image-geometry_1 (1).svg" alt="background-design-landpage" class="desktop-image-1">
@@ -205,12 +205,11 @@ If you like what you see and have a project you need coded, don’t hesitate and
                     <div>
                         <img src="images.svg\image_dots_with_teal (1).svg" class="dot" alt="background-image">
                     </div>
-                </div>
             </div>
             <div class="write-up">
                 <h1>About</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius quis odio neque ullam vitae iusto a quaerat? Odit est facere eum eveniet quod esse, numquam repudiandae beatae pariatur, rerum doloribus?</p>
-                <button class="Start-collab">
+                <button type ="submit" class="Start-collab">
                     Get my CV
                 <img src="images.svg\ic_download (2).svg" alt="download-icon">
                 </button>
@@ -223,9 +222,9 @@ If you like what you see and have a project you need coded, don’t hesitate and
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus architecto, atque laudantium autem vel explicabo soluta quos fugit quod distinctio. Ea ullam ut facere numquam minima dignissimos? Mollitia, esse iure.</p>
         <form action="https://formspree.io/f/xoqzvkpg" method="post" id="mobile-form">
             <label for="Name"><input type="text" placeholder="Your name" maxlength="30" class="name" required></label>
-            <label for="Email"><input type="email" placeholder="Your email" class="email"required id="email-mobile"></label>
-            <small id="messageEmail-mobile" class="small-message-box"></small>
+            <label for="Email"><input type="email" placeholder="Your email" class="email" required id="email-mobile"></label>
             <label for="Message"><textarea type="text" name="message" maxlength="500" class="message" placeholder="Enter your message here.." required></textarea></label>
+            <small id="messageEmail-mobile" class="small-message-box"></small>
             <button class="Start-collab-2" type="submit" id="form-button">Start collaboration</button>
         </form>
         </div>
@@ -238,7 +237,7 @@ If you like what you see and have a project you need coded, don’t hesitate and
                 <li><img src="images.svg\Vector (28).svg" alt="linkedin-icon"></li>
                 <li><img src="images.svg\Vector (29).svg" alt="medium-icon"></li>
                 <li><img src="images.svg\Vector (30).svg" alt="angellist-icon"></li>
-            </ul>>
+            </ul>
         </footer>
     </section>
     <!-- form area desk -->
@@ -256,14 +255,15 @@ If you like what you see and have a project you need coded, don’t hesitate and
                     <input type="text" name="Name" maxlength="30" class="name" placeholder="Name" required>
                     <label for="Email" name="Email" class="email-label">Your email</label>
                     <input type="email" name="Email" class="email" placeholder="Email" required id="email-desk">
-                    <small id="messageEmail" class="small-message-box"></small>
+                    
                 </div>
                     <div class="message-wrap">
                     <label for="Message" class="message-label" name="Message">message</label>
                     <textarea type="text" name="Message" maxlength="500" class="message" placeholder="Enter your message" required ></textarea>
                     </div>
-                    <button class="Start-collab-2" id="form-button-desk" type="submit">Start collaboration</button>
+                   <button class="Start-collab-2" id="form-button-desk" type="submit">Start collaboration</button>
                 </form> 
+                <small id="messageEmail" class="small-message-box"></small>
             </div>
         </div>
         <footer class="desktop-footer">
