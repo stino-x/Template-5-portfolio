@@ -7,25 +7,47 @@ const messageMobile = document.querySelector('#messageEmail-mobile');
 const nameInput = document.querySelector('.name');
 const emailInput = document.querySelector('.email');
 const messageInput = document.querySelector('.message');
-// const formbutton = document.querySelector('#form-button');
-// const formbuttondesktop = document.querySelector('#form-button-desk');
-
-const formobject = {
-  name: '',
-  email: '',
-  message: '',
-};
-
-function storeInput() {
-  const stringobject = JSON.stringify(formobject);
-  nameInput.value = formobject.name;
-  emailInput.value = formobject.email;
-  messageInput.value = formobject.message;
-  localStorage.setItem('formobject', stringobject);
+const savedData = JSON.parse(localStorage.getItem('formData')) || {};
+const savedDataDesk = JSON.parse(localStorage.getItem('formDataDesk')) || {};
+const emailDesk = document.querySelector('#email-desk');
+const nameDesk = document.querySelector('#nameDesktop');
+const textareaDesk = document.querySelector('#textareaDesktop');
+if (savedData) {
+  nameInput.value = savedData.name;
+  emailInput.value = savedData.email;
+  messageInput.value = savedData.message;
 }
 
-form.addEventListener('click', storeInput());
-mobileForm.addEventListener('click', storeInput());
+if (savedDataDesk) {
+  nameDesk.value = savedData.name;
+  emailDesk.value = savedData.email;
+  textareaDesk.value = savedData.message;
+}
+
+const saveData = () => {
+  const formData = {
+    name: nameInput.value,
+    email: emailInput.value,
+    message: messageInput.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+};
+
+const saveDataDesk = () => {
+  const formDataDesk = {
+    name: nameDesk.value,
+    email: emailDesk.value,
+    message: textareaDesk.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formDataDesk));
+};
+
+nameInput.addEventListener('input', saveData);
+emailInput.addEventListener('input', saveData);
+messageInput.addEventListener('input', saveData);
+nameDesk.addEventListener('input', saveDataDesk);
+emailDesk.addEventListener('input', saveDataDesk);
+textareaDesk.addEventListener('input', saveDataDesk);
 
 function validateDesk() {
   const compare = email.value.toLowerCase();
@@ -35,7 +57,7 @@ function validateDesk() {
     return true;
   }
   email.style.borderColor = 'red';
-  message.innerText = 'remove ALL Uppercase characters please';
+  message.innerText = 'Emails cannot take CAPITAL Letters submit valid email';
   message.style.color = 'red';
   return false;
 }
@@ -54,7 +76,7 @@ function validateMobile() {
     return true;
   }
   mobileEmail.style.borderColor = 'red';
-  messageMobile.innerText = 'remove ALL Uppercase characters please';
+  messageMobile.innerText = 'Emails cannot take CAPITAL Letters submit valid email';
   messageMobile.style.color = 'red';
   return false;
 }
@@ -65,18 +87,3 @@ mobileForm.addEventListener('submit', (e) => {
     mobileForm.submit();
   }
 });
-
-// const languagecontainer = document.queryselector('.languages');
-//   projectsID.forEach((project) => {
-//     languagecontainer.insertAdjacentHTML('beforeend',
-//       ` <h2${project.name}</h2>
-//         <ul class="H-R-J">
-//             <li class="Html-css">${project.technologies[0]}</li>
-//             <li class="Ruby">${project.technologies[1]}</li>
-//             <li class="Javascript">${project.technologies[2]}</li>
-//         </ul>
-//         <a class="see-this-project-mobile" data-id="${project.id} href="#">
-//             See this project
-//             <img src="images.svg/Union (7).svg" alt="arrow" class="arrow">
-//         </a>`);
-//   });
