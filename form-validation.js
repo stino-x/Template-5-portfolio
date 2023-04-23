@@ -8,11 +8,20 @@ const nameInput = document.querySelector('.name');
 const emailInput = document.querySelector('.email');
 const messageInput = document.querySelector('.message');
 const savedData = JSON.parse(localStorage.getItem('formData')) || {};
-
+const savedDataDesk = JSON.parse(localStorage.getItem('formDataDesk')) || {};
+const emailDesk = document.querySelector('#email-desk');
+const nameDesk = document.querySelector('#nameDesktop');
+const textareaDesk = document.querySelector('#textareaDesktop');
 if (savedData) {
   nameInput.value = savedData.name;
   emailInput.value = savedData.email;
   messageInput.value = savedData.message;
+}
+
+if (savedDataDesk) {
+  nameDesk.value = savedData.name;
+  emailDesk.value = savedData.email;
+  textareaDesk.value = savedData.message;
 }
 
 const saveData = () => {
@@ -24,9 +33,21 @@ const saveData = () => {
   localStorage.setItem('formData', JSON.stringify(formData));
 };
 
+const saveDataDesk = () => {
+  const formDataDesk = {
+    name: nameDesk.value,
+    email: emailDesk.value,
+    message: textareaDesk.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formDataDesk));
+};
+
 nameInput.addEventListener('input', saveData);
 emailInput.addEventListener('input', saveData);
 messageInput.addEventListener('input', saveData);
+nameDesk.addEventListener('input', saveDataDesk);
+emailDesk.addEventListener('input', saveDataDesk);
+textareaDesk.addEventListener('input', saveDataDesk);
 
 function validateDesk() {
   const compare = email.value.toLowerCase();
