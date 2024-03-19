@@ -5,8 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="blue-background">
+        <div class="white-body">
+            <div class="padding">
+                <div class="header-section">
+                    <div>
+                        <span class="heading">
+                            <h1>Project Name goes here</h1>
+                            <span class="cancel"><img src="carouselimages/desktop/cancel.svg" alt="cancel"></span>
+                        </span>
+                    </div>
+                    <div class="project-languages">
+                        <span>HTML/CSS</span>
+                        <span>Ruby on Rails</span>
+                        <span>Javascript</span>
+                    </div>
+                </div>
+                <div class="animation">
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="carouselimages/desktop/biggerimage.svg" alt="slide" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="carouselimages/desktop/alternate.svg" alt="slide" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="carouselimages/desktop/biggerimage.svg" alt="slide" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="carouselimages/desktop/alternate.svg" alt="slide" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="carouselimages/desktop/biggerimage.svg" alt="slide" />
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="carouselimages/desktop/biggerimage.svg" alt="slide" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="carouselimages/desktop/alternate.svg" alt="slide" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="carouselimages/desktop/biggerimage.svg" alt="slide" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="carouselimages/desktop/alternate.svg" alt="slide" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="carouselimages/desktop/biggerimage.svg" alt="slide" />
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="write-up">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt qui consequuntur cupiditate consectetur consequatur aliquid totam voluptatibus veniam quo incidunt neque minima, tenetur provident, placeat sequi? Nam corporis quidem illo?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laudantium inventore nostrum rem ad! Possimus, quod. Saepe beatae ipsa est molestiae nemo mollitia facere? Cumque consequuntur similique exercitationem libero dolorum.</p>
+                    </div>
+                    <div class="external-links">
+                        <div><p>See Live</p><img src="carouselimages/desktop/liveicon.svg" alt="live"></div>
+                        <div><p>See Github</p><img src="carouselimages/desktop/github.svg" alt="github"></div>
+                    </div>
+                    <div class="footer-section">
+                        <span class="left"><img src="carouselimages/desktop/previous.svg" alt="previous"></span>
+                        <span class="right"><img src="carouselimages/desktop/next.svg" alt="next"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="carousel.js"></script>
 </body>
 </html>
