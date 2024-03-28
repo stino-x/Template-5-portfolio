@@ -10,6 +10,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   height: auto;
+  overflow-x: hidden;
 }
 
 :root {
@@ -22,20 +23,27 @@ body {
   min-width: 100%;
   min-height: 100%;
   height: auto;
+  overflow: hidden;
   display: grid;
   place-items: center; /* center both horizontally and vertically */
 }
 
 .white-body {
+  position: relative;
   background-color: white;
-  width: 95%;
-  height: 95%;
+  max-width: 95%;
+  max-height: 95%;
 }
 
 .padding {
-  margin: 2.5rem;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  margin: 2.5rem 2.5rem 0 2.5rem;
   position: relative;
-  min-height: 100%;
+  max-height: 50%;
+  max-width: 100%;
 }
 
 .heading {
@@ -82,58 +90,84 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+  max-width: 900px;
+  margin: 5% auto 15% auto;
+
+  /* padding: 1rem; */
 }
 
-.swiper {
+/* body {
+  height: 100vh;
   width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-size: cover;
-  background-position: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* .swiper {
-  width: 100%;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
 } */
 
-.mySwiper2 {
-  height: 80%;
+/* .container {
+  max-width: 900px;
   width: 100%;
+  margin: auto;
+  padding: 1rem;
+} */
+
+.img-container {
+  min-height: 60vh;
+  background: url('./imgs/img-0.jpg') center/cover fixed no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
 }
 
-.mySwiper {
-  height: 20%;
-  box-sizing: border-box;
-  padding: 10px 0;
+@media screen and (min-width: 768px) {
+  .img-container {
+    min-height: 70vh;
+  }
 }
 
-.mySwiper .swiper-slide {
-  width: 25%;
+.btn {
+  background-color: white;
+  color: #333;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover {
+  background-color: #333;
+  color: white;
+}
+
+.img-grid {
+  height: 10vh;
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.img-grid img {
   height: 100%;
-  opacity: 0.4;
+  width: 100%;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  opacity: 0.3;
 }
 
-.mySwiper .swiper-slide-thumb-active {
+.img-grid img:first-of-type {
   opacity: 1;
 }
 
@@ -186,7 +220,7 @@ body {
   color: #fff;
 }
 
-.external-links div img {
+.external-links-img {
   width: 2rem;
 }
 
@@ -207,12 +241,32 @@ body {
 /* ...................MOBILE VERSION OF CAROUSEL............ */
 @media screen and (max-width: 768px) {
   /* CSS rules for screens wider than 768px */
-  .blue-background {
+
+  /* .blue-background {
     background-color: #fff;
+  } */
+
+  .blue-background {
+    position: relative;
+    background-color: white;
+    min-width: 100vw;
+    min-height: 120vh;
+    height: auto;
+    display: grid;
+    overflow-x: hidden;
+    grid-template-columns: 1fr;
+    place-items: center; /* center both horizontally and vertically */
   }
 
-  .padding {
+  /* .padding {
     margin: 0;
+  } */
+
+  .white-body {
+    position: relative;
+    background-color: white;
+    max-width: 95%;
+    max-height: 95%;
   }
 
   .project-languages {
@@ -234,7 +288,7 @@ body {
     margin-top: 5%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.5fr 0;
+    grid-template-rows: 1fr 0.8fr 0;
     height: 40%;
     place-items: center;
   }
@@ -284,8 +338,13 @@ body {
     height: auto;
   }
 
+  /* .animation {
+    width: 60%;
+  } */
+
   .footer-section {
     display: none;
+    visibility: hidden;
   }
 }
 
@@ -297,6 +356,20 @@ body {
 
 @media screen and (min-width: 431px) and (max-width: 768px) {
   .external-links div {
-    height: 40%;
+    height: 20%;
   }
+}
+
+.carousel-indicators img {
+  width: 70px;
+  display: block;
+}
+
+.carousel-indicators button {
+  position: relative;
+  width: max-content !important;
+}
+
+.carousel-indicators {
+  position: unset;
 }

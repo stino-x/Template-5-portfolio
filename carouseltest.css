@@ -1,0 +1,130 @@
+/* This is the box that shows the large image */
+#slideshow {
+  /* Style to taste */
+  width: 100%;
+
+  /* 75% is for a 4:3 aspect ratio, use 56.25% for 16:9 */
+  padding-bottom: 75%;
+  border: solid 1px black;
+  border-radius: 4px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #1e1e1e;
+  position: relative;
+  transition: 0.5s;
+}
+
+/* This is for the left and right scrolling arrows */
+#slideshow img {
+  position: absolute;
+  height: 80px;
+  opacity: 0.5;
+}
+
+/* Left scrolling arrow */
+#slideshow img.left {
+  left: 8px;
+}
+
+/* Right scrolling arrow */
+#slideshow img.right {
+  right: 8px;
+}
+
+/* Small clickable thumbnail pictures at the bottom */
+#filmstrip {
+  height: 10rem;
+  width: 100%;
+  margin: 0.5em auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+#filmstrip::-webkit-scrollbar {
+  display: none;
+}
+
+/* Each small thumbnail image */
+#filmstrip img {
+  display: flex;
+  height: 88%;
+  margin-right: 6px;
+}
+
+/* Highlight for thumbnail image that represents the large picture that's showing */
+.bordered {
+  box-shadow: 0 0 4px 4px purple;
+}
+
+/* #container {
+  display: none;
+} */
+
+/* Wide screen */
+@media screen and (min-width: 500px) {
+  #container {
+    width: 40%;
+
+    /* margin: 1em auto; */
+    max-width: 40%;
+  }
+
+  .animation {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+    margin: auto;
+
+    /* padding: 1rem; */
+  }
+
+  #slideshow img {
+    top: 45%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .animation {
+    position: relative;
+    width: 60%;
+    height: 50%;
+    max-width: 900px;
+
+    /* margin: auto; */
+
+    /* padding: 10rem 10rem 0 10rem; */
+  }
+}
+
+/* Narrow screen */
+@media screen and (max-width: 499px) {
+  #container {
+    width: 40%;
+
+    /* margin: 0 auto; */
+    max-width: 40%;
+  }
+
+  .animation {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+    margin: auto;
+
+    /* padding: 1rem; */
+  }
+
+  #slideshow img {
+    top: 30%;
+  }
+}
